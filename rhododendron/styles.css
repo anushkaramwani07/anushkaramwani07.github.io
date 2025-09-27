@@ -14,12 +14,13 @@
   height: 100vh;
  }
 
- #rhodoPicture{
+ #rhodoPicture {
   position: absolute;
   width: 100vw;
-  height:100vh;
+  height: 100vh;
   background-image: url("Pictures/Pacific.jpeg");
   background-size: cover;
+  background-position: center center;
  }
  #rhodoTitle{
   position: absolute;
@@ -34,4 +35,21 @@
   color: white;
   font-size: 2.5em;
   width: calc(100vw - 2em);
+ }
+
+ @media screen and (orientation: landscape) {
+
+  #rhodoPicture {
+    width: 50vw;
+    left: 50vw;
+  }
+
+#rhodoTitle{
+  width: 45vw;
+  left:50vw;
+}
+
+#rdhodoTitle h1 {
+  width: 45vw;
+
  }
