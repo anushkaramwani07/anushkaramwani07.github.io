@@ -17,7 +17,7 @@
   position: absolute;
   width: 100vw;
   height:100vh;
-  background-image: url("images/screenshots/Pacific.jpeg");
+  background-image: url("Pacific.jpeg");
   background-size: cover;
  }
  #rhodoTitle{
