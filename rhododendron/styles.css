@@ -43,13 +43,13 @@ header {
 
 @media screen and (orientation: landscape) {
 
-    #rhodiePicture {
+    #rhodoPicture {
         width: 50vw;
     }
 
     #rhodoTitle {
         width: 50vw;
-        left: 30vw;
+        left: 50vw;
         background-color: #333;
     }
 
