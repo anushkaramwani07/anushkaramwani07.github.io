@@ -37,6 +37,10 @@ header {
     width: calc(100vw - 2em);
 }
 
+#about
+{
+    background-color: beige;
+}
 
 /* PUT THE REST OF THE MOBILE BASELINE LAYOUT HERE */
 
