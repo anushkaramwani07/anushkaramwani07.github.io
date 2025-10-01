@@ -34,19 +34,31 @@ p.callout {
 }
 
 #row1 p{
-grid-column: calc(1/7);
+padding-left: calc(100vh / 6);
 }
 
 #row2 p{
-  grid-column: calc(1/ 4);
+  padding-left: calc(100vh * 1 / 6);
 }
 
 #row3 p{
-  grid-column: calc(4/7);
+  grid-column: calc(100vh * 2 / 6);
 }
 
 #row4 p{
-  grid-column: calc(2/6);
+  grid-column: calc(100vh * 3 / 6);
+}
+
+#row5 p{
+  grid-column: calc(100vh * 4 / 6);
+}
+
+#row6 p{
+  grid-column: calc(100vh * 5 / 6);
+}
+
+#row7 p{
+  grid-column: calc(100vh * 6 / 6);
 }
 
 /* ***************************************************** */
