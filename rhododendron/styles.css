@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
@@ -17,7 +19,6 @@ header {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-image: url("Pacific-Rhododendron-1.jpeg");
     background-size: cover;
     background-position: center center;
 }
@@ -63,6 +64,6 @@ header {
         width: 45vw;
     }
 
-    /* PUT THE REST OF THE DESKTOP LAYOUT HERE */
+    
     
 }
