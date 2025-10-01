@@ -32,7 +32,6 @@ p.callout {
   padding-left: 2em;
   margin-top: 4em;
 }
-
 #row1 p{
 padding-left: calc(100vh / 6);
 }
@@ -42,23 +41,31 @@ padding-left: calc(100vh / 6);
 }
 
 #row3 p{
-  grid-column: calc(100vh * 2 / 6);
+  padding-left: calc(100vh * 2 / 6);
 }
 
 #row4 p{
-  grid-column: calc(100vh * 3 / 6);
+  padding-left: calc(100vh * 3 / 6);
 }
 
 #row5 p{
-  grid-column: calc(100vh * 4 / 6);
+  padding-left: calc(100vh * 4 / 6);
 }
 
 #row6 p{
-  grid-column: calc(100vh * 5 / 6);
+  padding-left: calc(100vh * 5 / 6);
 }
 
 #row7 p{
-  grid-column: calc(100vh * 6 / 6);
+  padding-left: calc(100vh * 6 / 6);
+}
+
+#about p{
+  padding-left: calc(100vh * 3 / 6);
+}
+
+#moreabout p{
+  padding-left: calc(100vh * 0 / 6);
 }
 
 /* ***************************************************** */
