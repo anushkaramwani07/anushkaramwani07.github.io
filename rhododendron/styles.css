@@ -40,7 +40,8 @@ header {
 #about
 {
     text-align: center;
-    color: beige
+    color: saddlebrown;
+    background-color:beige;
 }
 
 /* PUT THE REST OF THE MOBILE BASELINE LAYOUT HERE */
