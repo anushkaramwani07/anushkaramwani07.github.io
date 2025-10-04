@@ -45,9 +45,6 @@ header {
     background-color:beige;
 }
 
-/* PUT THE REST OF THE MOBILE BASELINE LAYOUT HERE */
-
-
 @media screen and (orientation: landscape) {
 
     #rhodoPicture {
@@ -63,7 +60,4 @@ header {
     #rhodoTitle h1 {
         width: 45vw;
     }
-
-    
-    
 }

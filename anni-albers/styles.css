@@ -79,13 +79,14 @@ table,th,td{
   text-align: left;
   font-size: 1.2rem;  
 }
-#container {
+.container {
   columns: 6;
   column-gap: 2em;
   width: 80%;
+  margin: 0 auto;
 }
 
-#aboutauthor, #moreabout {
+.aboutauthor, .moreabout {
   text-align: center;
   font-size: medium;
   font-style: italic;
