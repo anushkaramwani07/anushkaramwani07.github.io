@@ -85,7 +85,7 @@ table,th,td{
   width: 80%;
 }
 
-#aboutauthor, #moreabout {
+#aboutauthor {
   text-align: center;
   font-size: medium;
   font-style: italic;
