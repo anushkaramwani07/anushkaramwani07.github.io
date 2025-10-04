@@ -80,8 +80,6 @@ table,th,td{
   font-size: 1.2rem;  
 }
 .container {
-  columns: 6;
-  column-gap: 2em;
   width: 80%;
   margin: 0 auto;
 }
