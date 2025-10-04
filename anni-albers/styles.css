@@ -79,6 +79,13 @@ table,th,td{
   text-align: left;
   font-size: 1.2rem;  
 }
+
+p.callouts {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  font-style: italic;
+}
+
 #container {
   columns: 6;
   column-gap: 2em;
