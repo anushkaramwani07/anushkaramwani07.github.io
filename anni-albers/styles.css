@@ -84,6 +84,8 @@ p.callouts {
   font-size: 1.5rem;
   line-height: 2.2rem;
   font-style: italic;
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #333;
 }
 
 #container {
