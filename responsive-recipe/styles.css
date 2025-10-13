@@ -1,5 +1,12 @@
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 10px) and (max-width: 1000px){
     body {
-        font-size: 18px;
+        font-size: 10px;
+        background-color: pink;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 330px){
+    body {
+        font-size: 1px;
+        background-color: green;
     }
 }
