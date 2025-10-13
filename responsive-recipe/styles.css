@@ -28,12 +28,8 @@
     width: 45%;
 }
 
-#time
+#footer, #time
 {
-    float: left;
-}
-
-#footer
-{
+    clear: both;
     float: left;
 }
