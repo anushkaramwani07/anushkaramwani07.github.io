@@ -27,3 +27,13 @@
     float: right;
     width: 45%;
 }
+
+#time
+{
+    float: left;
+}
+
+#footer
+{
+    float: left;
+}
