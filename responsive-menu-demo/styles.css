@@ -1,1 +1,27 @@
 /*CSS for responsive menu demo*/
+:root{
+  --nav-height: 3rem;
+  --nav-bg-color: grey;
+  --nav-text-color: white;
+  --nav-hover-bg-color: lightgrey;
+  --nav-hover-text-color: black;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: var(--nav-height);
+  background-color:var(--nav-bkgd-color);
+  
+}
