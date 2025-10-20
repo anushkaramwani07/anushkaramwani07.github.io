@@ -1,9 +1,9 @@
 /*CSS for responsive menu demo*/
 :root{
   --nav-height: 3rem;
-  --nav-bg-color: grey;
+  --nav-bkgd-color: grey;
   --nav-text-color: white;
-  --nav-hover-bg-color: lightgrey;
+  --nav-hover-bkgd-color: lightgrey;
   --nav-hover-text-color: black;
 }
 
@@ -22,6 +22,15 @@ nav{
   left:0;
   width: 100%;
   height: var(--nav-height);
-  background-color:var(--nav-bkgd-color);
-  
+  background-color: var(--nav-bkgd-color);
+
+}
+
+#navBurger{
+  position: relative;
+  display: block;
+  font-size: 2rem;
+  color: var(--var-text-color);
+  padding: 0.1rem 0 0 0.3em;
+  max-height: 2rem;
 }
