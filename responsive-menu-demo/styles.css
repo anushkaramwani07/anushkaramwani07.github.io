@@ -64,3 +64,31 @@ nav > ul > li{
   height: 100%;
   padding: 0.5rem;
 }
+
+nav > ul > li > a{
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+} 
+
+nav > ul > li > ul{
+  margin: 0 0 0 0.rem;
+  background-color: inherit;
+}
+
+nav > ul > li > ul > li{
+padding: 0.5rem;
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--nav-text-color);
+}
+
+nav > li:hover { 
+  background-color: var(--nav-hover-bkgd-color);
+}
+
+nav > ul > li > li:hover > a {
+  color: var(--nav-hover-text-color);
+}
