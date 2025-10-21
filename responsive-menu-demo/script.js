@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
   //respond to clicks on the burger icon
 
   //this will find the element named navBurger and listen for clicks
-  document.querySelector("#navBurger").addEventListener("clicked", function(e){
+  document.querySelector("#navBurger").addEventListener("click", function(e){
     document.querySelector("nav").classList.toggle("clicked");
 
   });
