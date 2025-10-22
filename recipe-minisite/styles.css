@@ -1,0 +1,35 @@
+@media screen and (min-width: 5px) and (max-width: 5000px){
+    body {
+        font-size: 10px;
+        background-color: pink;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 330px){
+    body {
+        font-size: 10px;
+        background-color: green;
+    }
+}
+
+#h1
+{
+    text-align: center;
+}
+
+#ingredients
+{
+    float:left;
+    width: 45%;
+}
+
+#directions
+{
+    float: right;
+    width: 45%;
+}
+
+#footer, #time
+{
+    clear: both;
+    float: left;
+}
