@@ -33,3 +33,21 @@
     clear: both;
     float: left;
 }
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--nav-height);
+    background-color: var(--nav-bkgd-color);
+}
+
+#navBurger {
+    position: relative;
+    display: block;
+    font-size: 2rem;
+    color: var(--nav-text-color);
+    padding: 0.1em 0 0 0.3em;
+    max-height: 2rem;
+}
