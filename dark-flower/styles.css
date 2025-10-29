@@ -45,6 +45,20 @@ header {
     background-color:beige;
 }
 
+
+#toggleDarkMode {
+  margin-top: 2em;
+}
+
+body.darkMode {
+  background-color: darkgrey;
+  color: white;
+}
+
+body.darkMode h1{
+  color: red;
+}
+
 @media screen and (orientation: landscape) {
 
     #rhodoPicture {
