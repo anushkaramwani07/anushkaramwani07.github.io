@@ -1,4 +1,4 @@
-#stars{
+#Stars{
   width: 500px;
   height: 80vh;
   border: 10px solid black;
@@ -6,7 +6,7 @@
   scroll-snap-type: proximity;
 }
 
-#stars img{
+#Stars img{
   width: 100%;
   scroll-snap-align: start;
 }
