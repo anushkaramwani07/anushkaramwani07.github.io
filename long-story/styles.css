@@ -3,18 +3,30 @@ img {
   border-radius: 10px; /* round corners */
 }
 
-
 section{
   height: 100vh;
   background-position: center;
   text-align: center;
 }
 
+.bg1{
+  background-image: url("night 1.jpeg");
+}
+
+.bg2{
+  background-image: url("night 2.jpeg");
+}
+
+.bg3{
+  background-image: url("night 3.jpeg");
+}
+
+.bg4{
+  background-image: url("night 4.jpeg");
+}
+
 h2{
   font-family: sans-serif;
   font-size:100px;
-}
-
-.bg1{
-  background-image: url(night 1.jpeg);
+  text-shadow: 2px 2px 8px black;
 }
