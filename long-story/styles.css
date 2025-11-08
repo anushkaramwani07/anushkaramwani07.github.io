@@ -2,9 +2,9 @@
   width: 500px;
   height: 80vh;
   border: 10px solid black;
-  overflow: auto; /* visible, auto, scroll, hidden  */  
+  overflow: auto; 
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory; /* direction (x, y, or both) + type (mandatory or proximity) */
+  scroll-snap-type: y mandatory;
 }
 
 #Stars img{
