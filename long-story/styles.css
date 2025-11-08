@@ -11,3 +11,7 @@
   width: 100%;
   scroll-snap-align: start;
 }
+
+#Stars h2{
+  font-size: 40px;
+}
