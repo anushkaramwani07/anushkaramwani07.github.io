@@ -1,3 +1,7 @@
 h2{
-  font-family: Copperplate Gothic 32 BC;
+  font-family: Copperplate Gothic;
+}
+
+.home{
+  background-image: url("picture 1.jpg");
 }
