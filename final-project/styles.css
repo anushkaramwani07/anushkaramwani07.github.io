@@ -4,4 +4,7 @@ h2{
 
 .home{
   background-image: url("picture 1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
