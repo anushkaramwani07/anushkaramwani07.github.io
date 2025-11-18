@@ -8,9 +8,12 @@ h2{
   height: 95vh;
 }
 
+
 .about{
   background-image: url("picture 2.jpg");
-
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
 }
 h1{
   text-align: center;
