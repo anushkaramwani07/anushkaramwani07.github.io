@@ -17,3 +17,10 @@ h2{
 h1{
   text-align: center;
 }
+
+.menu{
+  background-image: url("picture 3.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+}
