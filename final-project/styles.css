@@ -19,6 +19,7 @@ h1{
 }
 
 .menu-image{
+  background-image: url("picture 3.jpeg");
   background-size: cover;
   background-position: center;
   height: 95vh;
