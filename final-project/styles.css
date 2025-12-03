@@ -39,15 +39,3 @@ h1{
   color: black;
   z-index: 1;
 }
-
-.menu-text ul:nth-child(1) {
-  position: absolute; 
-  top: 1px;
-  left: 0px;
-}
-
-.menu-text ul:nth-child(2) {
-  position: relative; 
-  top: 1px;
-  left: 0;
-}
