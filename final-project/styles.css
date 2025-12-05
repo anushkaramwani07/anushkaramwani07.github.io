@@ -23,7 +23,11 @@ header{
   position: absolute;
   top: -28%;
   left:50%;
+  pointer-events: none;
+  z-index: 1;
 }
+
+
 
 
 
