@@ -1,28 +1,28 @@
 /*header tag in general*/
-header{
+header {
   text-align: center;
   position: relative;
   z-index: 10;
-  color:white;
+  color: white;
   font-size: 18px;
-  padding:5px;
+  padding: 5px;
 }
 
-.header-box{
+.header-box {
   background-color: lightgrey;
   padding: 20px;
   display: inline-block;
-  border-radius:15px;
+  border-radius: 15px;
 }
 
-.header-watermark{
+.header-watermark {
   font-size: 83px;
-  letter-spacing:20px;
+  letter-spacing: 20px;
   transform: translate(-50%, -50%);
-  color: rgba(0,0,0,0.05);
+  color: rgba(0, 0, 0, 0.05);
   position: absolute;
   top: -28%;
-  left:50%;
+  left: 50%;
   pointer-events: none;
   z-index: 1;
 }
@@ -31,7 +31,7 @@ header{
 
 
 
-h2{
+h2 {
   font-family: Copperplate Gothic 32 BC;
 }
 
@@ -39,50 +39,51 @@ h2{
 
 
 /*home page!!!!*/
-.home{
+.home {
   background-image: url("picture 1.jpg");
   background-size: cover;
   background-position: center;
   height: 95vh;
 }
 
-.home{
+.home {
   background-image: url("picture 1.jpg");
   background-size: cover;
   background-position: center;
   height: 88vh;
 }
 
-.home h2{
+.home h2 {
   text-align: center;
   font-family: "Science Gothic", sans-serif;
-  font-size:130px;
+  font-size: 130px;
   font-weight: bold;
   color: white;
   text-shadow: 5px 10px 9px #000000;
-  position:absolute;
+  position: absolute;
   left: 36%;
-  top:30%;
+  top: 30%;
 }
 
-.home h3{
-    text-align: center;
+.home h3 {
+  text-align: center;
   font-family: "Science Gothic", sans-serif;
-  font-size:29px;
+  font-size: 29px;
   color: white;
-  font-style:italic;
-  position:absolute;
-  top:52%;
-  left:43%;
+  font-style: italic;
+  position: absolute;
+  top: 52%;
+  left: 43%;
   animation: fadeIn 1.9s ease-in-out;
 }
 
 /*annimation:*/
-@keyframes fadeIn{
-  from{    
-  opacity: 0;  
-  } 
-  to{
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
     opacity: 1;
   }
 }
@@ -98,7 +99,7 @@ h2{
 
 
 /*Menu file*/
-.menu-text{
+.menu-text {
   position: relative;
   top: 50%;
   left: 50%;
@@ -108,14 +109,14 @@ h2{
 }
 
 
-.menu-image{
+.menu-image {
   background-image: url("picture 3.jpeg");
   filter: blur(5px);
   background-size: cover;
   background-position: center;
   height: 95vh;
-  width:100%;
-  position:absolute;
+  width: 100%;
+  position: absolute;
   inset: 0;
 
 }
@@ -127,14 +128,14 @@ h2{
 
 
 /*about page (description of the cafe)*/
-.about{
+.about-image {
   background-image: url("picture 2.jpg");
   background-size: cover;
   background-position: center;
   height: 95vh;
 }
 
-h1{
+h1 {
   text-align: center;
 }
 
