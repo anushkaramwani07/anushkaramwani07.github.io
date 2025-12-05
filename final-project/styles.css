@@ -61,8 +61,18 @@ h2{
   position:absolute;
   top:52%;
   left:34%;
+  animation: fadeIn 1.9s ease-in-out;
 }
 
+/*annimation:*/
+@keyframes fadeIn{
+  from{    
+  opacity: 0;  
+  } 
+  to{
+    opacity: 1;
+  }
+}
 
 
 
