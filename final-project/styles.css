@@ -1,6 +1,7 @@
 h2{
   font-family: Copperplate Gothic 32 BC;
 }
+
 .home{
   background-image: url("picture 1.jpg");
   background-size: cover;
@@ -8,16 +9,29 @@ h2{
   height: 95vh;
 }
 
-
 .home h2{
   text-align: center;
+  font-family: "Science Gothic", sans-serif;
+  font-size:80px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 5px 10px 9px #000000;
+  position:absolute;
+  left: 25%;
+  top:30%;
 }
 
 .home h3{
-  text-align: center;
+    text-align: center;
+  font-family: "Science Gothic", sans-serif;
+  font-size:25px;
+  color: white;
+  font-style:italic;
+  position:absolute;
+  left: 25%;
+  top:50%;
+  left:28%;
 }
-
-
 
 
 
@@ -55,8 +69,6 @@ h2{
 
 
 
-
-
 /*about page (description of the cafe)*/
 .about{
   background-image: url("picture 2.jpg");
@@ -85,6 +97,9 @@ header{
   display: inline-block;
   border-radius:15px;
 }
+
+
+
 
 
 
