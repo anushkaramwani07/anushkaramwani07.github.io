@@ -7,7 +7,30 @@ h2{
   background-position: center;
   height: 95vh;
 }
+.menu-text{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: black;
+}
 
+.home h2{
+  text-align: center;
+}
+
+.home h3{
+  text-align: center;
+}
+
+
+
+
+
+
+
+/*about page (description of the cafe)*/
 .about{
   background-image: url("picture 2.jpg");
   background-size: cover;
@@ -31,7 +54,7 @@ h1{
 
 }
 
-
+/*header tag in general*/
 header{
   text-align: center;
   position: relative;
@@ -47,24 +70,11 @@ header{
   border-radius:15px;
 }
 
-.menu-text{
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: left;
-  color: black;
-}
-
-.home h2{
-  text-align: center;
-}
-
-.home h3{
-  text-align: center;
-}
 
 
+
+
+/* team.html: for team members*/
 .team-container {
   display: flex;
   justify-content: center;
