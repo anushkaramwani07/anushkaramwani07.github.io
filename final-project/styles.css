@@ -37,6 +37,14 @@ header{
   position: relative;
   z-index: 10;
   color:white;
+  font-size: 18px;
+}
+
+.header-box{
+  background-color: lightgrey;
+  padding: 20px;
+  display: inline-block;
+  border-radius:15px;
 }
 
 .menu-text{
