@@ -56,6 +56,14 @@ header{
   color: black;
 }
 
+.home h2{
+  text-align: center;
+}
+
+.home h3{
+  text-align: center;
+}
+
 
 .team-container {
   display: flex;
