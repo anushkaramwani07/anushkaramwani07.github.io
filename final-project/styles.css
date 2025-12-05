@@ -31,12 +31,13 @@ h1{
 
 }
 
+
 header{
+  text-align: center;
   position: relative;
   z-index: 10;
   color:white;
 }
-
 
 .menu-text{
   position: relative;
