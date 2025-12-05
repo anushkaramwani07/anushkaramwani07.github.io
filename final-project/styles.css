@@ -7,6 +7,26 @@ h2{
   background-position: center;
   height: 95vh;
 }
+
+
+.home h2{
+  text-align: center;
+}
+
+.home h3{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/*Menu file*/
 .menu-text{
   position: relative;
   top: 50%;
@@ -16,13 +36,20 @@ h2{
   color: black;
 }
 
-.home h2{
-  text-align: center;
+
+.menu-image{
+  background-image: url("picture 3.jpeg");
+  filter: blur(5px);
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  width:100%;
+  position:absolute;
+  inset: 0;
+
 }
 
-.home h3{
-  text-align: center;
-}
+
 
 
 
@@ -42,17 +69,6 @@ h1{
   text-align: center;
 }
 
-.menu-image{
-  background-image: url("picture 3.jpeg");
-  filter: blur(5px);
-  background-size: cover;
-  background-position: center;
-  height: 95vh;
-  width:100%;
-  position:absolute;
-  inset: 0;
-
-}
 
 /*header tag in general*/
 header{
