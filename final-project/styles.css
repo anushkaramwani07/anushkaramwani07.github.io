@@ -332,6 +332,7 @@ h2 {
 }
 .calender-button{
   background-color: brown;
+  font-size: 20px;
   color: white;
   border-radius:8px;
   cursor: pointer;
@@ -340,4 +341,22 @@ h2 {
 .calender-button:hover{
   background-color: darkred;
   transform: scale(1.05);
+}
+.events-title{
+  font-size: 80px;
+  text-align:center;
+  font-style: italic;
+  letter-spacing:5px;
+  animation: fadeUp 0.8s cubic-bezier(0.4, 0, 1, 1) forwards;
+  opacity: 0;
+}
+@keyframes fadeUp{
+    0%{
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0);
+    }
 }
