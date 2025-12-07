@@ -320,12 +320,14 @@ h2 {
 }
 
 .event-card p{
-  font-size:25px;
-  color: green;
+  font-size:30px;
+  color: darkred;
   width: 530px;
 }
 .event-card h2{
-  font-size: 28px;
+ font-size: 40px;
+  font-style: italic;
+  letter-spacing:1px;
   margin-top: 20px;
   margin-bottom: 40px;
   color: black;
