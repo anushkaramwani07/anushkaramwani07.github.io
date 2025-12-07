@@ -303,13 +303,13 @@ h2 {
 /*for upcoming events*/
 .events-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
 }
 
 .event-card img{
-  width:90%;
-  height: 350px;
+  width:70%;
+  height: 650px;
   border-radius:12px;
   aspect-ratio: 3/5;
   object-fit: cover;
@@ -322,10 +322,22 @@ h2 {
 .event-card p{
   font-size:25px;
   color: green;
+  width: 530px;
 }
 .event-card h2{
   font-size: 28px;
   margin-top: 20px;
   margin-bottom: 40px;
   color: black;
+}
+.calender-button{
+  background-color: brown;
+  color: white;
+  border-radius:8px;
+  cursor: pointer;
+   transition: 0.3s ease;
+}
+.calender-button:hover{
+  background-color: darkred;
+  transform: scale(1.05);
 }
