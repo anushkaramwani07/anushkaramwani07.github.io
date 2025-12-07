@@ -362,3 +362,23 @@ h2 {
       transform: translateY(0);
     }
 }
+
+
+
+
+
+
+
+
+/*FAQ page*/
+.card{
+  height: 40px;
+  width: 50px;
+  border-radius: 8px;
+  cursor: pointer
+}
+.card-front{
+  background-color: lightgrey;
+  color: black;
+  padding: 20px;
+}
