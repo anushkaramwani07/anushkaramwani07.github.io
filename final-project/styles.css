@@ -443,3 +443,35 @@ body {
 /*CAN DO P: HOVER { COLOR:BLUE}; FOR ANNIMATION?!
 CAN DO SMTG SIMILAR FOR NAV IN HEADER?
 */
+.form-wrap{
+  max-width: 500px;
+  width: 100%;
+  margin-top: 30px;
+  padding: 30px;
+  background: skyblue;
+  border-radius: 30px;
+  box-shadow:0 6px 25px rgba(0,0,0,0.40);
+  animation: fade
+}
+
+.form-wrap input{
+  width: 80%;
+  padding:12px;
+  border-radius: 10px;
+  border: 1.5px solid #ccc;
+  background: #fafafa;
+  transition: transform 0.25s ease-out, box-shadow 0.25 ease-out, border-color 0.25 ease-out;
+}
+.form-wrap input:hover,
+.form-wrap input:focus{
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgbs(122, 90, 245, 0.4);
+  border-color: #7a5a5f;
+}
+.join-container{
+  min-height: 100vh;    
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  padding: 20px;
+}
