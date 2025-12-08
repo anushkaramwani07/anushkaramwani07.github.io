@@ -72,8 +72,8 @@ h2 {
   color: white;
   font-style: italic;
   position: absolute;
-  top: 52%;
-  left: 43%;
+  top: 50%;
+  left: 37%;
   animation: fadeIn 1.9s ease-in-out;
 }
 
@@ -436,3 +436,10 @@ body {
   flex-wrap: wrap;
 
 }
+
+
+
+
+/*CAN DO P: HOVER { COLOR:BLUE}; FOR ANNIMATION?!
+CAN DO SMTG SIMILAR FOR NAV IN HEADER?
+*/
