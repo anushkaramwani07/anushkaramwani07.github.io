@@ -298,6 +298,7 @@ h2 {
 
 
 
+
 /* team.html: for team members*/
 .team-container {
   display: flex;
@@ -307,6 +308,21 @@ h2 {
 
 .team-member {
   text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 25px 20px;
+  border-radius: 20px;
+  width: 280px;
+  backdrop-filter: blur(5px);
+  border-radius:8px;
+}
+.team-member:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15)
+}
+
+.team-member img{
+  border-radius: 20px;
+  object-fit: cover;
 }
 
 
