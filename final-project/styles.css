@@ -521,7 +521,6 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
   border-color: #7a5a5f;
 }
 .join-container{
-  min-height: 100vh;    
   display: flex;
   justify-content: center; 
   align-items: center;    
@@ -536,8 +535,10 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
 @keyframes fadeIn{
   from{
     opacity: 0;
+    trasnform: translateY(20px);
   }
   to{
-    opacity:1;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
