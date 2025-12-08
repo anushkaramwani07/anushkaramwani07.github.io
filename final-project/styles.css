@@ -303,15 +303,39 @@ h2 {
 .team-container {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 80px;
 }
+
+.team-title{
+  text-align:center;
+   font-size: 70px;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 5px;
+  animation: fadeUp 0.8s cubic-bezier(0.4, 0, 1, 1) forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .team-member {
   text-align: center;
   background: rgba(255, 255, 255, 0.6);
   padding: 25px 20px;
   border-radius: 20px;
-  width: 280px;
+  width: 20%;
+  margin: 20px;
   backdrop-filter: blur(5px);
   border-radius:8px;
 }
@@ -322,6 +346,8 @@ h2 {
 
 .team-member img{
   border-radius: 20px;
+  width:550px;
+  height: 550px;
   object-fit: cover;
 }
 
@@ -329,30 +355,6 @@ h2 {
 
 
 
-
-
-/* team.html: for team members*/
-.team-container {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-}
-
-.team-member {
-  text-align: center;
-}
-
-.events-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: start;
-}
-
-.event-card img {
-  width: 80%;
-  aspect-ratio: 3/5;
-  object-fit: cover;
-}
 
 
 
