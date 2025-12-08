@@ -56,24 +56,20 @@ h2 {
 .home h2 {
   text-align: center;
   font-family: "Science Gothic", sans-serif;
-  font-size: 130px;
+  font-size: 200px;
   font-weight: bold;
   color: white;
   text-shadow: 5px 10px 9px #000000;
-  position: absolute;
-  left: 36%;
-  top: 30%;
+  margin: 0;
 }
 
 .home h3 {
   text-align: center;
   font-family: "Science Gothic", sans-serif;
-  font-size: 29px;
+  font-size: 69px;
   color: white;
   font-style: italic;
-  position: absolute;
-  top: 50%;
-  left: 37%;
+  margin:0;
   animation: fadeIn 1.9s ease-in-out;
 }
 
