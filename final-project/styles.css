@@ -529,7 +529,8 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
 .join-message{
   font-size: 27px;
   text-align: center; 
-  transform: fadeIn 0.9s linear forward,
+  font-style: italic;
+  animation: fadeIn 1s linear forward,
 }
 
 @keyframes fadeIn{
