@@ -358,6 +358,8 @@ h2 {
 
 
 
+
+
 /*for upcoming events*/
 .events-grid {
   display: grid;
@@ -524,4 +526,18 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
   justify-content: center; 
   align-items: center;    
   padding: 20px;
+}
+.join-message{
+  font-size: 27px;
+  text-align: center; 
+  transform: fadeIn 0.9s linear forward,
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity:1;
+  }
 }
