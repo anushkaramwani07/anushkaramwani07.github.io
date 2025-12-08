@@ -92,14 +92,12 @@ h2 {
 
 /*Menu file*/
 .menu-text {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 40px;
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: left;
-  color: black;
-}
 
+}
 /*.menu-text {
   position: relative;
   top: 50%;
@@ -120,7 +118,8 @@ h2 {
 }
 
 /*coffee & espresso:*/
-.menu-text h5:nth-of-type(1) {
+/*.menu-text h5:nth-of-type(1) {
+
   font-size: 40px;
   text-align: left;
   position: absolute;
@@ -145,8 +144,7 @@ h2 {
   position: absolute;
   left: 0%;
   top: 55%;
-  color: black;
-}
+  color: black;} */
 
 .menu-text ul:nth-of-type(2) {
   font-size: 40px;
@@ -212,6 +210,44 @@ h2 {
   top: 35%;
   color: black;
 }
+
+
+/*Menu file*/
+.menu-text {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 40px;
+  position: relative;
+  
+}
+
+/*.menu-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}*/
+
+.menu-image {
+  background-image: url("picture 3.jpeg");
+  filter: blur(5px);
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+}
+.menu-container{
+  width: 90%;
+  margin: 0 auto;
+  grid-template-columns: repeat (2, 1fr);
+  gap: 40px;
+  position: relative;
+}
+
+
 
 
 
