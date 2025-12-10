@@ -549,7 +549,6 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
 
 
 
-
 /*photos html*/
 .photos-container{
   position: relative;
@@ -578,12 +577,18 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
   width: 400px;
   object-fit: cover;
   border-radius: 10px;
+  transition: transform 0.25s ease-out, box-shadow 0.25 ease-out, border-color 0.25 ease-out;
+}
+
+.photo-item img:hover{
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgbs(122, 90, 245, 0.4);
 }
 
 .photos-grid{
   z-index: 2;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
   gap: 50px;
   padding:20px;
