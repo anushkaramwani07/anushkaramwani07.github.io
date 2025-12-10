@@ -99,8 +99,6 @@ header {
 
 
 
-
-/* MENU STYLES (add near other components) */
 .menu-grid{
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* two columns on desktop */
@@ -121,9 +119,23 @@ header {
   background: rgba(255,255,255,0.6);
   margin-bottom:8px;
 }
-.item-name { font-weight:500; }
-.price { color:var(--muted); font-weight:600; }
-
+.item-name { 
+  font-weight:500; 
+}
+.price 
+{ 
+  color:var(--muted); font-weight:600; 
+}
+.menu-image {
+  background-image: url("picture 3.jpeg");
+  filter: blur(5px);
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+}
 
 
 
