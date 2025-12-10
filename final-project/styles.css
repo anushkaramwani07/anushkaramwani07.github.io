@@ -592,3 +592,13 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
   padding:5px;
   font-style:italic;
 }
+
+footer{
+  padding:30px;
+  font-family:serif;
+  letter-spacing:1px;
+  font-size:22px;
+  text-align:right;
+  width:100%;
+  margin-top:40px;
+}
