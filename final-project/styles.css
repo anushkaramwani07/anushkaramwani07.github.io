@@ -43,13 +43,6 @@ h2 {
   background-image: url("picture 1.jpg");
   background-size: cover;
   background-position: center;
-  height: 95vh;
-}
-
-.home {
-  background-image: url("picture 1.jpg");
-  background-size: cover;
-  background-position: center;
   height: 88vh;
 }
 
@@ -554,10 +547,26 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
   position: relative;
 }
 .photo-title{
-  font-size:40px;
+  text-align: center;
+  font-weight: bold;
   font-family: "Science Gothic", sans-serif;
+  font-size: 69px;
+  color: white;
+  font-style: italic;
+  margin:40px 0 20px;
+  animation: fadeIn 1.9s ease-in-out;
 }
 
+/*annimation:*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
 .photos-background{
   background-image: url("coffee-background.jpg");
   background-size: cover;
