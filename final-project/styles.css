@@ -550,6 +550,11 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
 
 
 /*photos html*/
+.photos-background{
+  background-image: url("coffee-background");
+}
+
+
 .photos{
   display: flex;
   flex-wrap: wrap;
