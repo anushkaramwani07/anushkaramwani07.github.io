@@ -546,8 +546,23 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
 
 
 /*Contact us form:*/
-/*contact us page:*/
-.contact-container p{
-  font-size:30px;
+.contact-container p {
+  font-size:22px;
   font-style: italic; 
+  padding: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-form{
+  background: rgba(255, 255, 255,0.85);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  padding: 10px;
+  border-radius: 9px;
 }
