@@ -547,17 +547,25 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
 
 
 
+
 /*photos html*/
+.photos{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content:center;
+}
+
 .photos img{
   height: 450px;
-  width:250px;
-  display: flex;
-  flex-wrap: wrap ;
-  padding:20px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .photos-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: start;
+  
 }
