@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
 
 :root{
-  accent:#7a5af5;          
-  cafe-brown: #3b2f2f;     
-  muted:#6b6b6b;           
-  page-bg: #faf6f0;        
+  --accent:#7a5af5;          
+  --cafe-brown: #3b2f2f;     
+  --muted:#6b6b6b;           
+  --page-bg: #faf6f0;        
 }
 
 html,body{
