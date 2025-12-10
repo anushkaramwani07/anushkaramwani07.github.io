@@ -566,7 +566,8 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
 }
 
 .contact-form input[type="text"],
-.contact-form input[type="email"] {
+.contact-form input[type="email"],
+.contact-form input[type="text-box"] {
   padding: 10px;
   border-radius: 9px;
 }
