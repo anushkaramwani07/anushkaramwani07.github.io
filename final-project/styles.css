@@ -556,8 +556,7 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
 
 
 .photo-item{
-  display: flex;
-  flex-wrap: wrap;
+  
   gap: 20px;
   margin: 20px;
   justify-content:center;
@@ -575,4 +574,9 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
   grid-template-columns: 1fr 1fr;
   align-items: start;
   gap: 50px;
+}
+
+.photo-item p{
+  font-size:20px;
+  
 }
