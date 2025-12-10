@@ -566,3 +566,17 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
   padding: 10px;
   border-radius: 9px;
 }
+
+.contact-form button{
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  background: grey;
+  font-size: 19px;
+}
+
+.contact-form button:hover{
+  background: lightgrey; 
+}
+
