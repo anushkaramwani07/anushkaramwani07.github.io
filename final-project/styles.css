@@ -17,30 +17,39 @@ html,body{
 }
 
 /*header tag in general*/
+/*header tag in general*/
 header {
+  background-color: #f5f0e8;
   text-align: center;
   position: relative;
   z-index: 10;
   color: white;
   font-size: 18px;
-  padding: 5px;
-}
-
-.header-box {
-  background-color: lightgrey;
   padding: 20px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
   border-radius: 15px;
 }
 
+.header-box {
+  background-color: #f5f0e8;
+  padding: 20px;
+  display: flex;
+  border-radius: 15px;
+  position: relative;
+  gap: 15px;
+  justify-content: center;
+}
+
 .header-watermark {
-  font-size: 83px;
-  letter-spacing: 20px;
+  font-size: 80px;
+  letter-spacing: 1px;
   transform: translate(-50%, -50%);
   color: rgba(0, 0, 0, 0.05);
   position: absolute;
-  top: -28%;
-  left: 50%;
+  top: 0%;
+  left: 40%;
   pointer-events: none;
   z-index: 1;
 }
