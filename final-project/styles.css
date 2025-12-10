@@ -585,3 +585,9 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
   background: lightgrey; 
 }
 
+.contact-container h4{
+  font-size:20px;
+  text-align: center;
+  padding:5px;
+  font-style:italic;
+}
