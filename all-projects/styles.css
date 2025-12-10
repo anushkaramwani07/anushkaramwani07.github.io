@@ -31,3 +31,19 @@ li{
   padding: 12px 16px;
   border-radius: 4px;
 }
+a{
+  color:#4b4b4b;
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover{  
+  color: #000;
+  text-decoration: underline;
+}
+
+body{
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
