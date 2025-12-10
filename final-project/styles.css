@@ -552,6 +552,10 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
 /*photos html*/
 .photos-background{
   background-image: url("coffee-background.jpg");
+  background-size: cover;
+  height:80%;
+  padding: 40px;
+  filter: blur(5px);
 }
 
 
