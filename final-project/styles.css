@@ -538,3 +538,17 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
     transform: translateY(0);
   }
 }
+
+
+
+
+
+
+
+/*photos html*/
+.photos img{
+  height:auto;
+  width:250px;
+  display: flex;
+  flex-wrap: wrap ;
+}
