@@ -553,6 +553,10 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
 .photos-container{
   position: relative;
 }
+.photo-title{
+  font-size:40px;
+  font-family: "Science Gothic", sans-serif;
+}
 
 .photos-background{
   background-image: url("coffee-background.jpg");
