@@ -30,14 +30,6 @@ header {
 
 
 
-
-h2 {
-  font-family: Copperplate Gothic 32 BC;
-}
-
-
-
-
 /*home page!!!!*/
 .home {
   background-image: url("picture 1.jpg");
@@ -62,7 +54,7 @@ h2 {
   font-size: 69px;
   color: white;
   font-style: italic;
-  margin:0;
+  margin: 0;
   animation: fadeIn 1.9s ease-in-out;
 }
 
@@ -91,6 +83,7 @@ h2 {
   position: relative;
 
 }
+
 /*.menu-text {
   position: relative;
   top: 50%;
@@ -137,9 +130,10 @@ h2 {
   position: absolute;
   left: 0%;
   top: 55%;
-  color: black;} */
+  color: black;
+}
 
-.menu-text ul:nth-of-type(2) {
+*/ .menu-text ul:nth-of-type(2) {
   font-size: 40px;
   text-align: left;
   position: absolute;
@@ -211,7 +205,7 @@ h2 {
   margin: 0 auto;
   padding-top: 40px;
   position: relative;
-  
+
 }
 
 /*.menu-text {
@@ -232,7 +226,8 @@ h2 {
   position: absolute;
   inset: 0;
 }
-.menu-container{
+
+.menu-container {
   width: 90%;
   margin: 0 auto;
   grid-template-columns: repeat (2, 1fr);
@@ -299,9 +294,9 @@ h2 {
   gap: 80px;
 }
 
-.team-title{
-  text-align:center;
-   font-size: 70px;
+.team-title {
+  text-align: center;
+  font-size: 70px;
   text-align: center;
   font-style: italic;
   letter-spacing: 5px;
@@ -330,13 +325,15 @@ h2 {
   width: 20%;
   margin: 20px;
   backdrop-filter: blur(5px);
-  border-radius:8px;
+  border-radius: 8px;
 }
-.team-member:hover{
+
+.team-member:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15)
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15)
 }
-.team-member img{
+
+.team-member img {
   border-radius: 20px;
   width: 100%;
   height: 80%;
@@ -483,50 +480,54 @@ h2 {
 /*CAN DO P: HOVER { COLOR:BLUE}; FOR ANNIMATION?!
 CAN DO SMTG SIMILAR FOR NAV IN HEADER?
 */
-.form-wrap{
+.form-wrap {
   max-width: 500px;
   width: 100%;
   margin-top: 30px;
   padding: 30px;
   background: rosybrown;
   border-radius: 30px;
-  box-shadow:0 6px 25px rgba(0,0,0,0.40);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.40);
   animation: fade
 }
 
-.form-wrap input{
+.form-wrap input {
   width: 80%;
-  padding:12px;
+  padding: 12px;
   border-radius: 10px;
   border: 1.5px solid #ccc;
   background: #fafafa;
   transition: transform 0.25s ease-out, box-shadow 0.25 ease-out, border-color 0.25 ease-out;
 }
+
 .form-wrap input:hover,
-.form-wrap input:focus{
+.form-wrap input:focus {
   transform: scale(1.03);
   box-shadow: 0 0 10px rgbs(122, 90, 245, 0.4);
   border-color: #7a5a5f;
 }
-.join-container{
+
+.join-container {
   display: flex;
-  justify-content: center; 
-  align-items: center;    
+  justify-content: center;
+  align-items: center;
   padding: 20px;
 }
-.join-message{
+
+.join-message {
   font-size: 27px;
-  text-align: center; 
+  text-align: center;
   font-style: italic;
   animation: fadeIn 1s linear forward,
 }
 
-@keyframes fadeIn{
-  from{
+@keyframes fadeIn {
+  from {
     opacity: 0;
     trasnform: translateY(20px);
   }
-  to{
+
+  to {
     opacity: 1;
     transform: translateY(0);
   }
@@ -542,18 +543,20 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
 
 
 
+
 /*photos html*/
-.photos-container{
+.photos-container {
   position: relative;
 }
-.photo-title{
+
+.photo-title {
   text-align: center;
   font-weight: bold;
   font-family: "Science Gothic", sans-serif;
-  font-size: 69px;
+  font-size: 99px;
   color: white;
   font-style: italic;
-  margin:40px 0 20px;
+  margin: 40px 0 20px;
   animation: fadeIn 1.9s ease-in-out;
 }
 
@@ -567,25 +570,27 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
     opacity: 1;
   }
 }
-.photos-background{
+
+.photos-background {
   background-image: url("coffee-background.jpg");
   background-size: cover;
   position: absolute;
-  inset:0;
-  z-index:-1;
-  width:100%;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
   padding: 40px;
   filter: blur(9px);
 }
 
-.photo-item{
+.photo-item {
   gap: 20px;
+  padding-left: 100px;
   margin: 20px;
-  justify-content:center;
-  width:400px;
+  justify-content: center;
+  width: 400px;
 }
 
-.photo-item img{
+.photo-item img {
   height: 450px;
   width: 400px;
   object-fit: cover;
@@ -593,23 +598,34 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
   transition: transform 0.25s ease-out, box-shadow 0.25 ease-out, border-color 0.25 ease-out;
 }
 
-.photo-item img:hover{
+.photo-item img:hover {
   transform: scale(1.03);
   box-shadow: 0 0 10px rgbs(122, 90, 245, 0.4);
 }
 
-.photos-grid{
+.photos-grid {
   z-index: 2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
   gap: 50px;
-  padding:20px;
+  padding: 20px;
 }
 
-.photo-item p{
-  font-size:30px;
+.photo-item p {
+  font-size: 30px;
   color: white;
-  padding:40px;
+  padding: 40px;
   text-align: left;
+}
+
+
+
+
+
+/*Contact us form:*/
+/*contact us page:*/
+.contact-container p{
+  font-size:30px;
+  font-style: italic; 
 }
