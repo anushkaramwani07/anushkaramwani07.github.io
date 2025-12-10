@@ -243,6 +243,19 @@ header {
   }
 }
 
+.form-wrap label[for="male"],
+.form-wrap label[for="female"],
+.form-wrap label[for="other"] {
+  display:inline-flex;
+  align-items: center;
+  margin-right:10px;
+  font-size: 18px;
+}
+
+
+
+
+
 
 .team-member {
   text-align: center;
