@@ -613,6 +613,43 @@ CAN DO SMTG SIMILAR FOR NAV IN HEADER?
   font-style:italic;
 }
 
+
+
+/*ThankYou form:*/
+.thank-you-container{
+  max-width: 600px;
+  margin: 120px;
+    background: rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  padding: 20px;
+  text-align:center;
+}
+.thank-you-container h2{
+  font-size:40px;
+  color: #3b2f2f;
+  margin-bottom: 10px;
+}
+
+.thank-you-container p{
+  font-size:22px;
+font-style: italic;        
+color: #3b2f2f;
+margin-bottom: 10px;
+}
+
+.thank-you-container a{
+  text-decoration: none;
+}
+.thank-you-container a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
 footer{
   padding:30px;
   font-family:serif;
