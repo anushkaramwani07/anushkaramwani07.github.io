@@ -36,9 +36,13 @@
       <label for="name">Name:</label><br>
       <input type="text" id="name" name="name" placeholder="Your Name"><br><br>
     
-      <label for="reason">Reason to reach out:</label><br>
-      <input type="text" id="reason" name="reason" placeholder="Enter reason"><br><br>
-
+    <fieldset style="border:none; padding:0; margin:0;">
+      <legend style="font-weight:600; margin-bottom:6px;">Gender (optional)</legend>
+      <label><input type="radio" name="gender" value="male"> Male</label>
+      <label style="margin-left:12px;"><input type="radio" name="gender" value="female"> Female</label>
+      <label style="margin-left:12px;"><input type="radio" name="gender" value="other"> Other</label>
+    </fieldset>
+      <br>
       <button type="submit">Submit</button>
     </form>
     </div>
