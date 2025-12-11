@@ -5,13 +5,6 @@
 }
 
 
-:root{
-  --accent:#7a5af5;          
-  --cafe-brown: #3b2f2f;     
-  --muted:#6b6b6b;           
-  --page-bg: #faf6f0;        
-}
-
 html,body{
   margin:0;
   padding:0;
