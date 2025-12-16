@@ -1,6 +1,6 @@
 console.log("Helloo!");
-const pet={
+const pet = {
   species: "Dog",
   name: "bud",
-  age: 3
+  age: 3.2
 };
