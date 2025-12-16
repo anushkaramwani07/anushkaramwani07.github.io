@@ -5,3 +5,6 @@ const pet = {
   name: 'bud', 
   age: 3
 };
+
+pet["true"]= "hello";
+console.log(pet["true"]);
