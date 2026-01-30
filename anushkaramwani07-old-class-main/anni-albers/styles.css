@@ -1,0 +1,103 @@
+/* by default, lets layout the first index.html*/
+main {
+  width: 80%;
+  max-width: 1100px;
+  margin-left: 0;
+  margin-right: 0;
+
+}
+
+h1 {
+  font-size: 3rem;
+  /* 3 rem is 3 times the font size of the root font size.*/
+}
+
+h2 {
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+p {
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  width: 50%;
+}
+
+p.callout {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  font-style: italic;
+  float: right;
+  text-align: right;
+  padding-left: 2em;
+  margin-top: 4em;
+}
+#row1 p{
+padding-left: calc(100vh / 6);
+}
+
+#row2 p{
+  padding-left: calc(100vh * 1 / 6);
+}
+
+#row3 p{
+  padding-left: calc(100vh * 2 / 6);
+}
+
+#row4 p{
+  padding-left: calc(100vh * 3 / 6);
+}
+
+#row5 p{
+  padding-left: calc(100vh * 4 / 6);
+}
+
+#row6 p{
+  padding-left: calc(100vh * 5 / 6);
+}
+
+#row7 p{
+  padding-left: calc(100vh * 6 / 6);
+}
+
+#about p{
+  padding-left: calc(100vh * 3 / 6);
+}
+
+#moreabout p{
+  padding-left: calc(100vh * 0 / 6);
+}
+
+/* ***************************************************** */
+/*                    CSS for index2 */
+/* ***************************************************** */
+
+table,th,td{
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: left;
+  font-size: 1.2rem;  
+}
+
+td p.callouts {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  font-style: italic;
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #333;
+}
+
+#container {
+  columns: 6;
+  column-gap: 2em;
+  width: 80%;
+}
+
+#aboutauthor {
+  text-align: center;
+  font-size: medium;
+  font-style: italic;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}

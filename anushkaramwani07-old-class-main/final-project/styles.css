@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+html,body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--page-bg);
+  color: #222;
+}
+
+/*header tag in general*/
+/*header tag in general*/
+header {
+  background-color: #f5f0e8;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 15px;
+}
+
+.header-box {
+  background-color: #f5f0e8;
+  padding: 20px;
+  display: flex;
+  border-radius: 15px;
+  position: relative;
+  gap: 15px;
+  justify-content: center;
+}
+
+.header-watermark {
+  font-size: 80px;
+  letter-spacing: 1px;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.05);
+  position: absolute;
+  top: 0%;
+  left: 40%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+/*home page!!!!*/
+.home {
+  background-image: url("picture 1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 88vh;
+}
+
+.home h2 {
+  text-align: center;
+  font-family: "Science Gothic", sans-serif;
+  font-size: 200px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 5px 10px 9px #000000;
+  margin: 0;
+}
+
+.home h3 {
+  text-align: center;
+  font-family: "Science Gothic", sans-serif;
+  font-size: 69px;
+  color: white;
+  font-style: italic;
+  margin: 0;
+  animation: fadeIn 1.9s ease-in-out;
+}
+
+/*annimation:*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+/*MENU ITEMS*/
+.container h2{
+  font-size: 100px;
+  text-align: center;
+  color: black;
+  font-style: italic;
+  letter-spacing: 5px;
+  animation: fadeUp 0.8s cubic-bezier(0.4, 0, 1, 1) forwards;
+  opacity: 0;
+}
+
+.menu-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* two columns on desktop */
+  gap: 28px;
+  margin-top: 12px;
+}
+@media (min-width:1100px){
+  .menu-grid { grid-template-columns: repeat(4,1fr); } /* 4 columns on wide screens */
+}
+
+.menu-column h3 {
+  margin-bottom: 10px;
+  color:cafe-brown; 
+  font-size: 40px;
+  color: black;
+}
+.menu-list {
+  list-style: none; 
+  padding:0; 
+  font-size:20px;
+  margin:0; 
+}
+.menu-list li {
+  display:flex;
+  justify-content:space-between;
+  padding: 5px 10px;
+  border-radius: 90px;
+  background: rgba(255,255,255,0.2);
+  margin-bottom:4px;
+}
+.item-name { 
+  font-weight:500;
+  font-style:oblique;
+}
+.price 
+{ 
+  color:muted;
+  font-weight:600; 
+}
+.menu-image {
+  background-image: url("picture 3.jpeg");
+  filter: blur(5px);
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  z-index:-1;
+}
+
+
+
+
+
+/*about the cafe*/
+.about-image {
+  background-image: url("picture 2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.about-text {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  color: black;
+  text-align: left;
+  position: relative;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.50);
+  border-radius: 15px;
+}
+
+.about-text h1 {
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.about-text ul {
+  font-size: 20px;
+  line-height: 1.6;
+  padding-left: 20px;
+}
+
+
+
+
+
+
+
+/* team.html: for team members*/
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: -100px;
+}
+
+.team-title {
+  text-align: center;
+    margin-top: -100px;
+  font-size: 70px;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 5px;
+  animation: fadeUp 0.8s cubic-bezier(0.4, 0, 1, 1) forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-wrap label[for="male"],
+.form-wrap label[for="female"],
+.form-wrap label[for="other"] {
+  display:inline-flex;
+  align-items: center;
+  margin-right:10px;
+  font-size: 18px;
+}
+
+
+
+
+
+
+.team-member {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 25px 20px;
+  border-radius: 20px;
+  width: 20%;
+  margin: 20px;
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+}
+
+.team-member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15)
+}
+
+.team-member img {
+  border-radius: 20px;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+
+
+
+
+
+
+
+
+
+/*for upcoming events*/
+.events-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+}
+
+.event-card img {
+  width: 70%;
+  height: 650px;
+  border-radius: 12px;
+  aspect-ratio: 3/5;
+  object-fit: cover;
+}
+
+.event-date {
+  font-size: 20px;
+}
+
+.event-card p {
+  font-size: 30px;
+  color: darkred;
+  width: 530px;
+}
+
+.event-card h2 {
+  font-size: 40px;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.calender-button {
+  background-color: brown;
+  font-size: 20px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.calender-button:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+}
+
+.events-title {
+  font-size: 80px;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 5px;
+  animation: fadeUp 0.8s cubic-bezier(0.4, 0, 1, 1) forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+/*annimation for faq page*/
+.card {
+  width: 280px;
+  height: 450px;
+  margin: 1rem auto;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.card-front {
+  background: #f5e6d3;
+  border: 1px solid #e5e7eb;
+}
+
+.card-back {
+  background: #f9f9f9;
+  transform: rotateY(180deg);
+}
+
+.cards-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+}
+
+
+
+
+/*CAN DO P: HOVER { COLOR:BLUE}; FOR ANNIMATION?!
+CAN DO SMTG SIMILAR FOR NAV IN HEADER?
+*/
+.form-wrap {
+  max-width: 500px;
+  width: 100%;
+  margin-top: 30px;
+  padding: 30px;
+  background: rosybrown;
+  border-radius: 30px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.40);
+  animation: fade
+}
+
+.form-wrap input {
+  width: 80%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1.5px solid #ccc;
+  background: #fafafa;
+  transition: transform 0.25s ease-out, box-shadow 0.25 ease-out, border-color 0.25 ease-out;
+}
+
+.form-wrap input:hover,
+.form-wrap input:focus {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgbs(122, 90, 245, 0.4);
+  border-color: #7a5a5f;
+}
+
+.join-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.join-message {
+  font-size: 27px;
+  text-align: center;
+  font-style: italic;
+  animation: fadeIn 1s linear forward,
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    trasnform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*photos html*/
+.photos-container {
+  position: relative;
+}
+
+.photo-title {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Science Gothic", sans-serif;
+  font-size: 99px;
+  color: white;
+  font-style: italic;
+  margin: 40px 0 20px;
+  animation: fadeIn 1.9s ease-in-out;
+}
+
+/*annimation:*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.photos-background {
+  background-image: url("coffee-background.jpg");
+  background-size: cover;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  padding: 40px;
+  filter: blur(9px);
+}
+
+.photo-item {
+  gap: 20px;
+  padding-left: 100px;
+  margin: 20px;
+  justify-content: center;
+  width: 400px;
+}
+
+.photo-item img {
+  height: 450px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.25s ease-out, box-shadow 0.25 ease-out, border-color 0.25 ease-out;
+}
+
+.photo-item img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgbs(122, 90, 245, 0.4);
+}
+
+.photos-grid {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  gap: 50px;
+  padding: 20px;
+}
+
+.photo-item p {
+  font-size: 30px;
+  color: white;
+  padding: 40px;
+  text-align: left;
+}
+
+
+
+
+
+/*Contact us form:*/
+.contact-container{
+  background-color:lightgrey;
+  
+}
+.contact-container p {
+  font-size:22px;
+  font-style: italic; 
+  padding: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-form{
+  background: rgba(255, 255, 255,0.85);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="text-box"]{
+  padding: 10px;
+  border-radius: 9px;
+}
+
+.contact-form button{
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  background: grey;
+  font-size: 19px;
+}
+
+.contact-form button:hover{
+  background: lightgrey; 
+}
+
+.contact-container h4{
+  font-size:20px;
+  text-align: center;
+  padding:5px;
+  font-style:italic;
+}
+
+
+
+/*ThankYou form:*/
+.thank-you-container{
+  max-width: 600px;
+  margin: 120px;
+    background: rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  padding: 20px;
+  text-align:center;
+}
+.thank-you-container h2{
+  font-size:40px;
+  color: #3b2f2f;
+  margin-bottom: 10px;
+}
+
+.thank-you-container p{
+  font-size:22px;
+font-style: italic;        
+color: #3b2f2f;
+margin-bottom: 10px;
+}
+
+.thank-you-container a{
+  text-decoration: none;
+}
+.thank-you-container a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+footer{
+  padding:30px;
+  font-family:serif;
+  letter-spacing:1px;
+  font-size:22px;
+  text-align:right;
+  width:100%;
+  margin-top:40px;
+}
+
+
+
+
+/*Responsive design:*/
+@media(max-width:768px){
+  .menu-grid{
+    grid-template-columns:1fr;
+  }
+  
+  .team-container{
+    flex-direction:column;
+    align-items:center;
+  }
+  
+  .events-grid{
+    grid-template-columns:1fr; 
+  }
+  
+  .photos-grid{
+    grid-template-columns:1fr; 
+  }
+}

@@ -1,0 +1,107 @@
+/*CSS for responsive menu demo*/
+:root{
+  --nav-height: 3rem;
+  --nav-bkgd-color: grey;
+  --nav-text-color: white;
+  --nav-hover-bkgd-color: lightgrey;
+  --nav-hover-text-color: black;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: var(--nav-height) 0 0 0;
+}
+
+nav{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: var(--nav-height);
+  background-color: var(--nav-bkgd-color);
+
+}
+
+#navBurger{
+  position: relative;
+  display: block;
+  font-size: 2rem;
+  color: var(--var-text-color);
+  padding: 0.1em 0 0 0.3em;
+  max-height: 2rem;
+}
+
+nav ul{
+  position: relative;
+   background-color: var(--nav-bkgd-color);
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+nav > ul {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+nav.clicked>ul{
+  max-height: 90vh;
+}
+
+nav > ul > li{
+  position: relative;
+  background-color: var(--nav-bkgd-color);
+  display: block;
+  margin: 1rem;
+}
+
+nav > ul > li{
+  position: relative;
+    background-color: var(--nav-bkgd-color);
+    display: block;
+    margin: 1rem;
+}
+
+nav > ul > li > a{
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+} 
+
+nav > ul > li > a::after {
+  position: absolute;
+  content: "⌄";
+  right: 0.3rem;
+  top: 0.2rem;
+  color: inherit;
+  font-size: 110%;
+}
+
+nav > ul > li > ul{
+  margin: 0 0 0 1rem;
+  background-color: inherit;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+nav > ul > li > ul > li{
+max-height: 90vh;
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--nav-text-color);
+}
+
+nav > li:hover { 
+  background-color: var(--nav-hover-bkgd-color);
+}
+
+nav > ul > li > li:hover > a {
+  color: var(--nav-hover-text-color);
+}

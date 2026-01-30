@@ -1,0 +1,77 @@
+
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+}
+
+#rhodoPicture {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+#rhodoTitle {
+    position: absolute;
+    width: 80vw;
+    height: 100vh;
+}
+
+#rhodoTitle h1 {
+    position: absolute;
+    bottom: 0;
+    left: 1em;
+    color: white;
+    font-size: 2.5em;
+    width: calc(100vw - 2em);
+}
+
+#about
+{
+    text-align: center;
+    color: saddlebrown;
+    background-color:beige;
+}
+
+
+#toggleDarkMode {
+  margin-top: 2em;
+}
+
+body.darkMode {
+  background-color: darkgrey;
+  color: white;
+}
+
+body.darkMode h1{
+  color: red;
+}
+
+@media screen and (orientation: landscape) {
+
+    #rhodoPicture {
+        width: 50vw;
+    }
+
+    #rhodoTitle {
+        width: 50vw;
+        left: 50vw;
+        background-color: #333;
+    }
+
+    #rhodoTitle h1 {
+        width: 45vw;
+    }
+}

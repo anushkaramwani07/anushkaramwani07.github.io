@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+}
+
+#formContainer {
+    width: 50vw;
+    min-width: 250px;
+    max-width: 500px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    box-shadow: 0 10px 10px #777;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
+}

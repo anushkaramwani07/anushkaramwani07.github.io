@@ -1,0 +1,17 @@
+#Stars{
+  width: 500px;
+  height: 80vh;
+  border: 10px solid black;
+  overflow: auto; 
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+#Stars img{
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+#Stars h2{
+  font-size: 20px;
+}

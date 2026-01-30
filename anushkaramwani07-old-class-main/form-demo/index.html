@@ -1,0 +1,70 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+  <link rel="stylesheet" href="../styles.css" media="all">
+  <style>
+  </style>
+</head>
+
+<body>
+  <main>
+
+    <section id="formContainer">
+
+      <h1>Contact Us</h1>
+      <p>Got a question? Let us know</p>
+      <form action="thankyou.html" name="contactUs" id="contactUs">
+
+        <table>
+          <tr>
+            <td>
+              your name:
+            </td>
+            <td>
+              <input type="text" name="yourName" id="yourName" placeholder="Enter your name here" value="">
+            </td>
+
+          </tr>
+
+          <tr>
+            <td>Your email address:</td>
+            <td><input type="email" name="yourEmail" placeholder="Enter your email" value=""></td>
+          </tr>
+
+          <tr>
+            <td>Your favorite color:</td>
+            <td><input type="color" name="yourColor" id="yourColor"></td>
+          </tr>
+
+          <tr>
+            <td>Date of Availibility: </td>
+            <td><input type="date" name="availableDate" id="availableDate"></td>
+          </tr>
+
+          <tr>
+            <td>How should we respond?</td>
+            <td>
+              <select name="respondMethod" id="respondMethod">
+                <option value="email">By Email</option>
+                <option value="telepathy">Use your mind</option>
+                <option value="none">DO not respond</option>
+              </select>
+            </td>
+          </tr>
+            <td colspan="2">
+              <input type="checkbox" name="subscribed" id="subscribed" checked>
+              <label for="subscribed">yes, i want to subscribe
+                </label>
+            </td>
+            
+        </table>
+
+      </form>
+  </main>
+
+</body>
+
+</html>
