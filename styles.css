@@ -16,6 +16,11 @@ section{
     padding: 10px;
     margin-bottom:20px;
     border-radius: 20px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+section:hover{
+    transform: translateY(-14px);
 }
 
 section h2{
