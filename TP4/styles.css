@@ -1,1 +1,23 @@
 /* Styles for TP4: TIC TAC TOE */
+
+:root{
+    --gameBoardSize: 80vh;
+    --gameBoardSpacer: 15px;   
+}
+
+#gameBoard {
+    position: relative;
+    width: var(--gameBoardSize);
+    height: var(--gameBoardSize);
+    background-color: black;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: var(--gameBoardSpacer);
+}
+
+.gameSpace{
+    position: relative;
+    background: white;
+}
