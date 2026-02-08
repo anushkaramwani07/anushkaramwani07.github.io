@@ -1,6 +1,7 @@
 /* Styles for TP4: TIC TAC TOE */
 @import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
+/*Controls the size and spacing of the board*/
 :root{
     --gameBoardSize: 80vh;
     --gameBoardSpacer: 15px;   
