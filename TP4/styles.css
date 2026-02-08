@@ -19,7 +19,7 @@
     width: calc( ( var(--gameBoardSize)/ 3) - var(--gameBoardSpacer) );
     height: calc( ( var(--gameBoardSize)/ 3) - var(--gameBoardSpacer) );
     font-family: "SN Pro";
-    font-size: 8rem;
+    font-size: 10rem;
     overflow: hidden;
     text-align: center;
     text-transform: uppercase;
