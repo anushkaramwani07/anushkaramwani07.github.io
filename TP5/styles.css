@@ -1,5 +1,5 @@
 :root {
-    --cardSize: 20px;
+    --cardSize: 20vw;
     /* variable for card dimensions */
 }
 
@@ -14,8 +14,8 @@
 .cardContent {
     position: absolute;
     /* positioning within the parent card object */
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     transition: transform 0.5s;
     transform-style: preserve-3d;
     /* special CSS property relevant to 3D flips */
@@ -187,7 +187,7 @@
 @media screen and (orientation: landscape) {
 
     :root {
-        --cardSize: 20vw;
+        --cardSize: 10vw;
     }
 
     #gameBoard {
