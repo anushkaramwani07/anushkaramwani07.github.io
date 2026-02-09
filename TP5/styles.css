@@ -173,8 +173,6 @@
 }
 
 
-
-
 /*Positioning the cards*/
 #gameBoard {
     position: relative;
@@ -186,7 +184,6 @@
 
 
 /* responsive design*/
-
 @media screen and (orientation: landscape) {
 
     :root {
