@@ -1,5 +1,5 @@
 :root {
-    --cardSize: 200px;
+    --cardSize: 20px;
     /* variable for card dimensions */
 }
 
@@ -49,4 +49,152 @@
     color: darkblue;
     transform: rotateY(180deg);
     /* pre-flip so it appears on parent's flip */
+}
+
+.pair1 .cardBottom{
+  --s: 44px; /* control the size*/
+  --c1: #5e412f;
+  --c2: #fcebb6;
+  
+  background:
+    linear-gradient(135deg,#0000 18.75%,var(--c1) 0 31.25%,#0000 0),
+    repeating-linear-gradient(45deg,var(--c1) -6.25% 6.25%,var(--c2) 0 18.75%);
+  background-size: var(--s) var(--s); 
+}
+
+.pair2 .cardBottom {
+    --s: 52px;
+    /* control the size*/
+    --c1: #b2b2b2;
+    --c2: #ffffff;
+    --c3: #d9d9d9;
+
+    --_g: var(--c3) 0 120deg, #0000 0;
+    background:
+        conic-gradient(from -60deg at 50% calc(100%/3), var(--_g)),
+        conic-gradient(from 120deg at 50% calc(200%/3), var(--_g)),
+        conic-gradient(from 60deg at calc(200%/3), var(--c3) 60deg, var(--c2) 0 120deg, #0000 0),
+        conic-gradient(from 180deg at calc(100%/3), var(--c1) 60deg, var(--_g)),
+        linear-gradient(90deg, var(--c1) calc(100%/6), var(--c2) 0 50%,
+            var(--c1) 0 calc(500%/6), var(--c2) 0);
+    background-size: calc(1.732*var(--s)) var(--s);
+}
+
+
+.pair3 .cardBottom {
+  --s: 34px; /* control the size*/
+  --c1: #ecbe13;
+  --c2: #309292;
+  
+  --_g: radial-gradient(calc(var(--s)/2),var(--c1) 97%,#0000);
+  background:
+    var(--_g),var(--_g) calc(2*var(--s)) calc(2*var(--s)),
+    repeating-conic-gradient(from 45deg,#0000 0 25%,var(--c2) 0 50%) calc(-.707*var(--s)) calc(-.707*var(--s)),
+    repeating-linear-gradient(135deg,var(--c1) calc(var(--s)/-2) calc(var(--s)/2),var(--c2) 0 calc(2.328*var(--s)));
+  background-size: calc(4*var(--s)) calc(4*var(--s));
+}
+
+.pair4 .cardBottom {
+  --s: 26px; /* control the size*/
+  --c1: #000000;
+  --c2: #d2d3d5;
+  --c3: #727c7e;
+  
+  --g1: conic-gradient(at calc(250%/3) calc(50%/3),var(--c2) 60deg,#0000 0 300deg,var(--c1) 0);
+  --g2: conic-gradient(at calc(50%/3) 50%,#0000 75%,var(--c1) 0);
+  --g3: conic-gradient(at calc(100%/3) 50%,#0000 75%,var(--c2) 0);
+  --g4: conic-gradient(from 59deg at calc(200%/3) calc(249%/9),var(--c3) 61deg,#0000 62deg);
+  --g5: conic-gradient(from 60deg at 50% calc(250%/3),#f1f1f1 /*4th color*/ 60deg,var(--c1) 0 120deg,#0000 0);
+  --_p: calc(9*tan(30deg)*var(--s));
+  background:
+    var(--g1) calc(-1*var(--s)) 0,var(--g1) calc(2*var(--s)) var(--_p),
+    var(--g2),var(--g2) calc(3*var(--s)) var(--_p),
+    var(--g3),var(--g3) calc(3*var(--s)) var(--_p),
+    var(--g4),var(--g4) calc(3*var(--s)) var(--_p),
+    var(--g5) calc(3*var(--s)) 0,var(--g5) 0 var(--_p) var(--c3);
+  background-size: calc(6*var(--s)) calc(2*var(--_p))
+}
+
+.pair5 .cardBottom {
+  --s: 34px; /* control the size*/
+  --c1: #d9ceb2;
+  --c2: #948c75;
+  
+  --_g: calc(2*var(--s)) calc(2*var(--s)) 
+    radial-gradient(25% 25%,var(--c1) 99%,#0000 101%);
+  background:
+    0 var(--s)/var(--_g),var(--s) 0/var(--_g),
+    radial-gradient(50% 50%,var(--c2) 97%,#0000)
+     calc(var(--s)/2) calc(var(--s)/2)/var(--s) var(--s),
+    linear-gradient(90deg,var(--c1) 50%,var(--c2) 0) 
+     0 0/calc(2*var(--s));
+}
+
+
+.pair6 .cardBottom {
+  --s: 100px; /* control the size*/
+  --c1: #5a3d31;
+  --c2: #e5edb8;
+  
+  background:
+    radial-gradient(#0000 50%,var(--c1) 52% 55%,var(--c2) 57%)
+    0 0/var(--s) var(--s),
+    repeating-linear-gradient(45deg,var(--c1) 0 25%,var(--c2) 0 50%)
+    0 0/calc(2*var(--s)) calc(2*var(--s))
+}
+
+.pair7 .cardBottom {
+  --s: 50px; /* control the size*/
+  --c1: #292522;
+  --c2: #efd9b4;
+  
+  --c: #0000 75%,var(--c1) 0;
+  --g1: conic-gradient(at 75% 25%,var(--c));
+  --g2: conic-gradient(at 25% 75%,var(--c));
+  background: 
+    var(--g1),var(--g1) var(--s) var(--s),
+    var(--g2),var(--g2) var(--s) var(--s) var(--c2);
+  background-size: calc(2*var(--s)) calc(2*var(--s));
+}
+
+.pair8 .cardBottom {
+  --s: 80px; /* control the size*/
+  --c1: #e9e0d1;
+  --c2: #2b3b1c;
+  
+  --c:#0000 75%,var(--c1) 0;
+  --g:/calc(2*var(--s)) var(--s) 
+    conic-gradient(at 62.5% 25%,var(--c));
+  background:
+    calc(  var(--s)/4) calc(var(--s)/ 4) var(--g),
+    calc(5*var(--s)/4) calc(var(--s)/-4) var(--g),
+    linear-gradient(90deg,var(--c)) 0/var(--s) var(--s)
+    var(--c2);
+}
+
+
+
+
+/*Positioning the cards*/
+#gameBoard {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+
+/* responsive design*/
+
+@media screen and (orientation: landscape) {
+
+    :root {
+        --cardSize: 20vw;
+    }
+
+    #gameBoard {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
