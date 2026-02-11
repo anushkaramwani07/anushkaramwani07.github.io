@@ -1,5 +1,7 @@
 /*Styles for Weather app*/
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 :root {
     --predictionBoxWidth: 30vw;
     --predictionBoxHeight: 30vh;
@@ -12,7 +14,7 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 main {
@@ -39,7 +41,7 @@ main {
 
 #currentTemp{
     position: absolute;
-    font-size: 5rem;
+    font-size: 4rem;
     left: 1rem;
 }
 
@@ -48,13 +50,14 @@ main {
     bottom: 1rem;
     left: 1rem;
     bottom: 2rem;
-    font-size: 1.2 rem;
+    font-size: 1.9 rem;
 }
 
 #currentHumidity,
 #currentWind {
     display: flex;
     align-items: center;
+    font-size: 2rem;
 }
 
 
@@ -73,7 +76,6 @@ main {
     grid-area: currentWind;
     background-color: darkgrey;
     border-bottom: 1px solid white;
-
 }
 
 /**************************** FURURE PREDICTION **********************************/
