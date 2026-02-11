@@ -1,5 +1,10 @@
 /*Styles for Weather app*/
 
+:root {
+    --predictionBoxWidth: 30vw;
+    --predictionBoxHeight: 30vh;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -29,11 +34,13 @@ main {
     position:relative;
     grid-area: currentInfo;
     background-color: salmon;
+    border-bottom: 1px solid white;
 }
 
 #currentTemp{
     position: absolute;
     font-size: 5rem;
+    left: 1rem;
 }
 
 #currentStatus{
@@ -41,14 +48,23 @@ main {
     bottom: 1rem;
     left: 1rem;
     bottom: 2rem;
+    font-size: 1.2 rem;
+}
+
+#currentHumidity,
+#currentWind {
+    display: flex;
+    align-items: center;
 }
 
 
 /**************************** CURRENT HUMIDITY **********************************/
-#currentHuidity{
+#currentHumidity{
     position:relative;
     grid-area: currentHumidity;
     background-color: lightblue;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
 }
 
 /**************************** CURRENT WIND **********************************/
@@ -56,14 +72,18 @@ main {
     position:relative;
     grid-area: currentWind;
     background-color: darkgrey;
+    border-bottom: 1px solid white;
+
 }
 
 /**************************** FURURE PREDICTION **********************************/
 #futureInfo{
+    position: relative;
     grid-area: future;
     background-color: lightgoldenrodyellow;
     overflow: auto;
     overflow-y: hidden;
+    white-space: nowrap;
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
@@ -71,16 +91,28 @@ main {
 .futureDay{
     position: absolute;
     width: var(--predictionBoxWidth);
-    height: 30vh;
+    height: var(--predictionBoxHeight);
+    top: 1rem;
+    left: 1rem;
 }
 
 .futureDay:nth-child(2){
     left: var(--predictionBoxWidth);
 }
 
-.futureDay:nth-child(2){
-    left: var(--predictionBoxWidth) * 2;
+.futureDay:nth-child(3){
+    left: calc(var(--predictionBoxWidth) * 2 );
+    border-right: none;
+
 }
+
+#currentHumidity, 
+#currentWind,
+#futureInfo{
+    padding: 1rem;
+}
+
+
 
 /**************************** MOBILE SCREEN **********************************/
 
@@ -95,9 +127,9 @@ main {
         grid-template-columns: 60vw 40vw;
         grid-template-rows: var(--predictionBoxHeight) var(--predictionBoxHeight) var(--predictionBoxHeight);
         grid-template-areas:
-            'currentInfo    currentHum'
-            'currentInfo    currentWind'
-            'currentInfo    future';
+        'currentInfo        currentInfo'
+        'currentHumidity    currentWind'
+        'future             future';
     }
 
     #currentInfo {
