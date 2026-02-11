@@ -22,7 +22,6 @@ main {
     width: 100vw;
     height: 100vh;
     background-color: lightgray;
-
     display: grid;
     grid-template-columns: 50vw 50vw;
     grid-template-rows: 50vh 20vh 10vh 20vh;
@@ -48,6 +47,9 @@ main {
     background-image: 
     linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),
     url("chicago.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border-bottom: 1px solid white;
 }
 
@@ -77,7 +79,9 @@ main {
 #currentHumidity{
     position:relative;
     grid-area: currentHumidity;
-    background-color: lightblue;
+    background-image: 
+    linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),
+    url("clouds-and-sun.png");
     border-bottom: 1px solid white;
     border-right: 1px solid white;
 }
