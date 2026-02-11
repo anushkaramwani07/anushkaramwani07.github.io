@@ -47,7 +47,7 @@ main {
     grid-area: currentInfo;
     background-image: 
     linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),
-    url("rainy.png");
+    url("chicago.png");
     border-bottom: 1px solid white;
 }
 
