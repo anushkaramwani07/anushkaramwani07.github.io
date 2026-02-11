@@ -45,7 +45,9 @@ main {
 #currentInfo {
     position:relative;
     grid-area: currentInfo;
-    background-color: salmon;
+    background-image: 
+    linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),
+    url("rainy.png");
     border-bottom: 1px solid white;
 }
 
@@ -84,7 +86,9 @@ main {
 #currentWind{
     position:relative;
     grid-area: currentWind;
-    background-color: darkgrey;
+    background-image: 
+    linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),
+    url("clouds-and-sun.png");
     border-bottom: 1px solid white;
 }
 
@@ -92,7 +96,9 @@ main {
 #futureInfo{
     position: relative;
     grid-area: future;
-    background-color: lightgoldenrodyellow;
+    background-image: 
+    linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),
+    url("hot.png");
     overflow: auto;
     overflow-y: hidden;
     white-space: nowrap;
