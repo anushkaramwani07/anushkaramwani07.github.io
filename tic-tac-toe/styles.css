@@ -1,1 +1,52 @@
-/* test */
+/* Styles for TP4: TIC TAC TOE */
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+/*Controls the size and spacing of the board*/
+:root{
+    --gameBoardSize: 80vh;
+    --gameBoardSpacer: 15px;   
+}
+
+#gameBoard {
+    position: relative;
+    width:calc(var(--gameBoardSize) - var(--gameBoardSpacer));
+    height: calc(var(--gameBoardSize) - var(--gameBoardSpacer));
+    background-color: black;
+}
+
+.gameSpace {
+    position: absolute;
+    background-color: white;
+    width: calc( ( var(--gameBoardSize)/ 3) - var(--gameBoardSpacer) );
+    height: calc( ( var(--gameBoardSize)/ 3) - var(--gameBoardSpacer) );
+    font-family: "SN Pro";
+    font-size: 10rem;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.row1{
+    top: 0;
+}
+
+.row2{
+    top: calc(var(--gameBoardSize) / 3);
+}
+
+.row3 {
+    top: calc((var(--gameBoardSize) / 3) * 2);
+}
+
+.col1 {
+    left: 0;
+}
+
+.col2 {
+    left: calc(var(--gameBoardSize) / 3);
+}
+
+.col3{
+    left: calc((var(--gameBoardSize) / 3) * 2);
+}
