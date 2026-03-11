@@ -76,10 +76,9 @@ document.addEventListener("DOMContentLoaded", function () {
     //find all the clickable spaces
     let allSpaces = document.querySelectorAll(".gameSpace");
 
-    for(x = 0; x < allSpaces.length; x++) {
-
-        allSpaces[x].addEventListener("click", function() {
-            this.innerHTML = "x";
+    for (let eachSpace of allSpaces){
+        eachSpace.addEventListener("click", function(){
+            this.innerHTML = "X";
         });
     }
 });
