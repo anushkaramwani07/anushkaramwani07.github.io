@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     for (let eachSpace of allSpaces){
         eachSpace.addEventListener("click", function(){
-            this.innerHTML = "X";
+            this.innerHTML = "x";
         });
     }
 });
