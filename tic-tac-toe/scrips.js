@@ -85,8 +85,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //for of loop:
     for (let eachSpace of allSpaces){
-        eachSpace.addEventListener("click", function(){
-            this.innerHTML = currentTurn;
-        });
+        eachSpace.addEventListener("click", clickSquare);
     }
 });
