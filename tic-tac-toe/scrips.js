@@ -72,13 +72,21 @@ function checkGameboard(a, b, c) {
 }
 
 
+function clickSquare() {
+    this.innerHTML = currentTurn;
+
+    if(currentTurn == "x") currentTurn = "o";
+    else currentTurn = "x";
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     //find all the clickable spaces
     let allSpaces = document.querySelectorAll(".gameSpace");
 
+    //for of loop:
     for (let eachSpace of allSpaces){
         eachSpace.addEventListener("click", function(){
-            this.innerHTML = "x";
+            this.innerHTML = currentTurn;
         });
     }
 });
