@@ -75,8 +75,12 @@ function checkGameboard(a, b, c) {
 function clickSquare() {
     this.innerHTML = currentTurn;
 
-    if(currentTurn == "x") currentTurn = "o";
-    else currentTurn = "x";
+    if (this.innerHTML == "") {
+
+        //this is to flip turn after each click
+        if (currentTurn == "x") currentTurn = "o";
+        else currentTurn = "x";
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -84,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let allSpaces = document.querySelectorAll(".gameSpace");
 
     //for of loop:
-    for (let eachSpace of allSpaces){
+    for (let eachSpace of allSpaces) {
         eachSpace.addEventListener("click", clickSquare);
     }
 });
