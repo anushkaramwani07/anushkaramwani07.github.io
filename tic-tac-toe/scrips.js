@@ -77,6 +77,7 @@ function clickSquare() {
 
     if (this.innerHTML == "") {
 
+        this.innerHTML = currentTurn;
         //this is to flip turn after each click
         if (currentTurn == "x") currentTurn = "o";
         else currentTurn = "x";
