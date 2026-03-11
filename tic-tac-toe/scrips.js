@@ -93,4 +93,9 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let eachSpace of allSpaces) {
         eachSpace.addEventListener("click", clickSquare);
     }
+
+    let currentPlayer = document.querySelector("#currentPlayer span");
+    currentPlayer.innerHTML = currentTurn;
+
+
 });
