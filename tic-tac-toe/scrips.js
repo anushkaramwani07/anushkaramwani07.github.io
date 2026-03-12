@@ -78,6 +78,26 @@ function clickSquare() {
 
         this.innerHTML = currentTurn;
 
+        //update the array of rows based on the ID
+        if(this.id == "a1") rowA(0) = currentTurn;
+        if(this.id == "a2") rowB(1) = currentTurn;
+        if(this.id == "a3") rowC(2) = currentTurn
+
+        if(this.id == "b1") rowA(0) = currentTurn;
+        if(this.id == "b2") rowB(1) = currentTurn;
+        if(this.id == "b3") rowC(2) = currentTurn
+
+        if(this.id == "c1") rowA(0) = currentTurn;
+        if(this.id == "c1") rowB(1) = currentTurn;
+        if(this.id == "c1") rowC(2) = currentTurn
+
+
+        //ptint arrays to console
+        console.log(rowA);
+        console.log(rowB);
+        console.log(rowC);
+
+
         //this is to flip turn after each click
         if (currentTurn == "x") currentTurn = "o";
         else currentTurn = "x";
