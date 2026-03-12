@@ -89,12 +89,7 @@ function clickSquare() {
         console.log("Remaining turns" + remainingTurns);
 
 
-        this.classList.add("clicked");
-
-        // subtract 1 from remaining turns
-        remainingTurns = remainingTurns - 1; // or remainingTurns--
-        console.log("Remaining turns: " + remainingTurns);
-
+        //this.classList.add("clicked");
         // update the array of rows with the player value
         if (this.id == "a1") rowA[0] = currentTurn;
         if (this.id == "a2") rowA[1] = currentTurn;
