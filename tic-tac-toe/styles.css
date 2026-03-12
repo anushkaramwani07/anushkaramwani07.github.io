@@ -63,3 +63,11 @@
     text-align:center;
     z-index: 1;
 }
+
+.gameSpace:hover{
+    background-color: lightgray;   
+}
+
+.gameSpace.clicked:hover{
+    background-color: lightgoldenrodyellow;   
+}
