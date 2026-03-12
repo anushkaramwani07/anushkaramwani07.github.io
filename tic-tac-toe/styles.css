@@ -51,18 +51,25 @@
     left: calc((var(--gameBoardSize) / 3) * 2);
 }
 
-#gameResult {
-    top:0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    color: white;
-    font-size: 5rem;
-    text-align:center;
-    z-index: 1;
+.gameSpace:hover {
+    background-color: lightcyan;
+}
+
+.gameSpace.clicked:hover {
+    background-color: white;
 }
 
 
-.gameSpace.clicked:hover{
-    background-color: lightgoldenrodyellow;   
+#gameResult {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    z-index: 1;
 }
