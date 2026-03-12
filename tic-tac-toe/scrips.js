@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     //update current player DOM element with first player
-    let currentPlayer = document.querySelector("#currentPlayer span");
+    currentPlayer = document.querySelector("#currentPlayer span");
     currentPlayer.innerHTML = currentTurn;
 
 });
