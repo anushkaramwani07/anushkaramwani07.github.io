@@ -79,8 +79,7 @@ function clickSquare() {
         this.innerHTML = currentTurn;
 
         //this is to flip turn after each click
-        if (currentTurn == "x")
-            currentTurn = "o";
+        if (currentTurn == "x") currentTurn = "o";
         else currentTurn = "x";
 
         //update next player in DOM
@@ -92,13 +91,13 @@ document.addEventListener("DOMContentLoaded", function () {
     //find all the clickable spaces
     let allSpaces = document.querySelectorAll(".gameSpace");
 
-    //for of loop:
+    //for-of loop:
     for (let eachSpace of allSpaces) {
         eachSpace.addEventListener("click", clickSquare);
     }
 
+    //update current player DOM element with first player
     let currentPlayer = document.querySelector("#currentPlayer span");
     currentPlayer.innerHTML = currentTurn;
-
 
 });
