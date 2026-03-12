@@ -97,6 +97,42 @@ function clickSquare() {
         console.log(rowB);
         console.log(rowC);
 
+        // get a handle on the DOM element to be updated with the outcome
+        let gameOutputMsg = document.querySelector("#gameResult");
+
+        // call your function checkGameboard() with the 3 rows
+        let winState = checkGameboard(rowA, rowB, rowC);
+
+        // test the returned value of the function
+        if (winState == "x") {
+            gameOutputMsg.innerHTML = "X wins";
+            gameOver = true;
+
+        } else if (winState == "o") {
+            gameOutputMsg.innerHTML = "O wins";
+            gameOver = true;
+
+        } else if ( (winState == "d") && (remainingTurns == 0) ) {
+            gameOutputMsg.innerHTML = "draw";
+            gameOver = true;
+        }else { 
+            gameOutputMsg.innerHTML = "unknown";
+        }
+
+        // reveal game outcome if game is over
+        if (gameOver) {
+            document.querySelector("#gameResult").style.display = "block";
+        }
+
+        // flip turn back and forth
+        if (currentTurn == "x") currentTurn = "o";
+        else currentTurn = "x";
+
+        // update next player DOM element
+        currentPlayer.innerHTML = currentTurn;
+
+
+
 
         //this is to flip turn after each click
         if (currentTurn == "x") currentTurn = "o";
