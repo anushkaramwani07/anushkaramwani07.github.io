@@ -82,7 +82,6 @@ function clickSquare() {
         // set space
         this.innerHTML = currentTurn;
 
-
         //will subtract 1 from remining turns
         remainingTurns = remainingTurns - 1;
         //can write "reminingTurns--"; instead of this

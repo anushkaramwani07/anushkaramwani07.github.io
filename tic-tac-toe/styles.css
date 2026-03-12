@@ -50,3 +50,16 @@
 .col3{
     left: calc((var(--gameBoardSize) / 3) * 2);
 }
+
+#gameResult {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 5rem;
+    text-align:center;
+    z-index: 1;
+}
