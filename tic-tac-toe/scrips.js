@@ -72,30 +72,38 @@ function checkGameboard(a, b, c) {
 }
 
 
+// function to handle clicks 
+
 function clickSquare() {
 
-    if (this.innerHTML == "") {
+    // only proceed if space is empty
+    if ( (this.innerHTML == "") && (!gameOver) ) {
 
+        // set space
         this.innerHTML = currentTurn;
+        this.classList.add("clicked");
 
-        //update the array of rows based on the ID
-        if(this.id == "a1") rowA(0) = currentTurn;
-        if(this.id == "a2") rowB(1) = currentTurn;
-        if(this.id == "a3") rowC(2) = currentTurn
+        // subtract 1 from remaining turns
+        remainingTurns = remainingTurns - 1; // or remainingTurns--
+        console.log("Remaining turns: " + remainingTurns);
 
-        if(this.id == "b1") rowA(0) = currentTurn;
-        if(this.id == "b2") rowB(1) = currentTurn;
-        if(this.id == "b3") rowC(2) = currentTurn
+        // update the array of rows with the player value
+        if (this.id == "a1") rowA[0] = currentTurn;
+        if (this.id == "a2") rowA[1] = currentTurn;
+        if (this.id == "a3") rowA[2] = currentTurn;
+        if (this.id == "b1") rowB[0] = currentTurn;
+        if (this.id == "b2") rowB[1] = currentTurn;
+        if (this.id == "b3") rowB[2] = currentTurn;
+        if (this.id == "c1") rowC[0] = currentTurn;
+        if (this.id == "c2") rowC[1] = currentTurn;
+        if (this.id == "c3") rowC[2] = currentTurn;
 
-        if(this.id == "c1") rowA(0) = currentTurn;
-        if(this.id == "c1") rowB(1) = currentTurn;
-        if(this.id == "c1") rowC(2) = currentTurn
-
-
-        //ptint arrays to console
+        // output arrays to console
+        console.log("Rows:");
         console.log(rowA);
         console.log(rowB);
         console.log(rowC);
+
 
         // get a handle on the DOM element to be updated with the outcome
         let gameOutputMsg = document.querySelector("#gameResult");
@@ -115,8 +123,7 @@ function clickSquare() {
         } else if ( (winState == "d") && (remainingTurns == 0) ) {
             gameOutputMsg.innerHTML = "draw";
             gameOver = true;
-        }else { 
-            gameOutputMsg.innerHTML = "unknown";
+
         }
 
         // reveal game outcome if game is over
@@ -128,19 +135,16 @@ function clickSquare() {
         if (currentTurn == "x") currentTurn = "o";
         else currentTurn = "x";
 
+        //will subtract 1 from remining turns
+        remainingTurns = remainingTurns - 1;
+        //can write "reminingTurns--"; instead of this
+        console.log("Remaining turns" + remainingTurns);
+
         // update next player DOM element
         currentPlayer.innerHTML = currentTurn;
 
-
-
-
-        //this is to flip turn after each click
-        if (currentTurn == "x") currentTurn = "o";
-        else currentTurn = "x";
-
-        //update next player in DOM
-        currentPlayer.innerHTML = currentTurn;
     }
+
 }
 
 document.addEventListener("DOMContentLoaded", function () {
