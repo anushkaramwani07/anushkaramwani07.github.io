@@ -82,6 +82,9 @@ function clickSquare() {
         if (currentTurn == "x")
             currentTurn = "o";
         else currentTurn = "x";
+
+        //update next player in DOM
+        currentPlayer.innerHTML = currentTurn;
     }
 }
 
