@@ -81,6 +81,14 @@ function clickSquare() {
 
         // set space
         this.innerHTML = currentTurn;
+
+
+        //will subtract 1 from remining turns
+        remainingTurns = remainingTurns - 1;
+        //can write "reminingTurns--"; instead of this
+        console.log("Remaining turns" + remainingTurns);
+
+
         this.classList.add("clicked");
 
         // subtract 1 from remaining turns
@@ -134,11 +142,6 @@ function clickSquare() {
         // flip turn back and forth
         if (currentTurn == "x") currentTurn = "o";
         else currentTurn = "x";
-
-        //will subtract 1 from remining turns
-        remainingTurns = remainingTurns - 1;
-        //can write "reminingTurns--"; instead of this
-        console.log("Remaining turns" + remainingTurns);
 
         // update next player DOM element
         currentPlayer.innerHTML = currentTurn;
