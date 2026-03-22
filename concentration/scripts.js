@@ -15,6 +15,5 @@ document.addEventListener("DOMContentLoaded", function(e) {
     for (x = 0; x<allCards.length; x++){
         let randNum = Math.floor( Math.random() * allCards.length );
         gameboard.insertBefore( allCards[x], gameboard.children[randNum]);
-        
     }
 });
