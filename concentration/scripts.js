@@ -6,7 +6,7 @@
 
 
 //willrun when DOM loads
-document.addEventListener("DOMContentLoaded", function(e)){
+document.addEventListener("DOMContentLoaded", function(e) {
 
     let allCards = document.querySelectorAll(".card");
     let gameboard = document.querySelector("#gameBoard");
@@ -17,4 +17,4 @@ document.addEventListener("DOMContentLoaded", function(e)){
         gameboard.insertBefore( allCards[x], gameboard.children[randNum]);
         
     }
-}
+});
