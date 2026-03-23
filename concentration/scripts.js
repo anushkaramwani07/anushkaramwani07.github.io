@@ -1,4 +1,12 @@
 
+function clearClicks() {
+    let allClickedCards = document.querySelectorAll(".clicked");
+    for (let eachCard of allClickedCards) {
+        eachCard.classList.remove("clicked");
+    }
+    playerClicks++;
+    document.querySelector("#turnCount span").innerHTML = playerClicks;
+}
 
 function flipCard() {
 
@@ -17,6 +25,8 @@ function flipCard() {
     allClickedCards = document.querySelectorAll(".clicked");
 
     if (allClickedCards.length == 2) {
+
+        playerClicks++;
 
         let card1 = allClickedCards[0].classList.toString();
         let card2 = allClickedCards[1].classList.toString();
