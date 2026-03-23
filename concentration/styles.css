@@ -68,6 +68,12 @@
   background-size: var(--s) var(--s); 
 }
 
+.matched {
+  opacity: 0;
+  transition-delay: 2s;
+}
+
+
 .pair2 .cardBottom {
     --s: 52px;
     /* control the size*/

@@ -1,4 +1,6 @@
 
+let clearClicks = 0;
+
 function clearClicks() {
     let allClickedCards = document.querySelectorAll(".clicked");
     for (let eachCard of allClickedCards) {
@@ -8,50 +10,49 @@ function clearClicks() {
     document.querySelector("#turnCount span").innerHTML = playerClicks;
 
     //check for winning
-       let allCards=documentquerySelectorAll(".card");
-        let matchedCards = document.querySekectorAll(".matched");
+    let allCards = documentquerySelectorAll(".card");
+    let matchedCards = document.querySekectorAll(".matched");
 
-        if(allCards.length == matchedCards.length) {
-            //player has matched all cards
-            document.querySelctor("#winning").innerHTML = "You Won!"
-        }
+    if (allCards.length == matchedCards.length) {
+        //player has matched all cards
+        document.querySelctor("#winning").innerHTML = "You Won!"
+    }
 }
 
 function flipCard() {
 
-    if(!this.classList.contains("matched"))
-    {
-    this.classList.add("clicked");
-
-    //this will get all the cards that were clicked
-    let allClickedCards = document.querySelectorAll(".clicked");
-
-    if (allClickedCards.length < 2) {
+    if (!this.classList.contains("matched")) {
         this.classList.add("clicked");
-    }
 
-    //refresh the click
-    allClickedCards = document.querySelectorAll(".clicked");
+        //this will get all the cards that were clicked
+        let allClickedCards = document.querySelectorAll(".clicked");
 
-    if (allClickedCards.length == 2) {
+        if (allClickedCards.length < 2) {
+            this.classList.add("clicked");
+        }
 
-        playerClicks++;
+        //refresh the click
+        allClickedCards = document.querySelectorAll(".clicked");
 
-        let card1 = allClickedCards[0].classList.toString();
-        let card2 = allClickedCards[1].classList.toString();
+        if (allClickedCards.length == 2) {
 
-        if (card1 == card2) {
-            console.log("Its a match!!");
-            allClickedCards[0].classList.add("matched");
-            allClickedCards[1].classList.add("matched");
-            
-        } else {
-            console.log("Its not a match!!");
-            window.setTimeout(clearClicks, 2000);
-            clearClicks();
+            playerClicks++;
+
+            let card1 = allClickedCards[0].classList.toString();
+            let card2 = allClickedCards[1].classList.toString();
+
+            if (card1 == card2) {
+                console.log("Its a match!!");
+                allClickedCards[0].classList.add("matched");
+                allClickedCards[1].classList.add("matched");
+
+            } else {
+                console.log("Its not a match!!");
+                window.setTimeout(clearClicks, 2000);
+                clearClicks();
+            }
         }
     }
-}
 }
 
 //will run when DOM loads
