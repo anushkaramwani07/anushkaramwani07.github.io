@@ -11,6 +11,7 @@ function flipCard() {
         this.classList.add("clicked");
     }
 
+    //refresh the click
     allClickedCards = document.querySelectorAll(".clicked");
 
     if (allClickedCards.length == 2) {
@@ -24,6 +25,7 @@ function flipCard() {
             allClickedCards[1].classList.add("matched");
             allClickedCards[0].classList.remove("clicked");
             allClickedCards[1].classList.remove("clicked");
+            window.setTimeout(clearClicks, 2000);
         } else {
             console.log("Its not a match!!");
         }
