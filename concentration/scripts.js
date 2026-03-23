@@ -30,8 +30,7 @@ function flipCard() {
     }
 }
 
-
-//willrun when DOM loads
+//will run when DOM loads
 document.addEventListener("DOMContentLoaded", function (e) {
 
     //just storing them in this variable

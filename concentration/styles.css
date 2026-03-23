@@ -8,6 +8,7 @@
     width: var(--cardSize);
     height: var(--cardSize);
     perspective: 500px;
+    transition: opacity 1s;
     /* special CSS property relevant to 3D flips */
 }
 
