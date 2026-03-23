@@ -21,7 +21,7 @@
     /* special CSS property relevant to 3D flips */
 }
 
-.card:hover .cardContent {
+.card.clicked .cardContent {
     transform: rotateY(180deg);
     /* simulate a 3D flip */
 }
