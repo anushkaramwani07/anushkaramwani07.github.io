@@ -23,11 +23,11 @@ function flipCard() {
             console.log("Its a match!!");
             allClickedCards[0].classList.add("matched");
             allClickedCards[1].classList.add("matched");
-            allClickedCards[0].classList.remove("clicked");
-            allClickedCards[1].classList.remove("clicked");
-            window.setTimeout(clearClicks, 2000);
+            
         } else {
             console.log("Its not a match!!");
+            clearClicks();
+            window.setTimeout(clearClicks, 2000);
         }
     }
 }
