@@ -26,8 +26,8 @@ function flipCard() {
             
         } else {
             console.log("Its not a match!!");
-            clearClicks();
             window.setTimeout(clearClicks, 2000);
+            clearClicks();
         }
     }
 }
