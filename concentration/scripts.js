@@ -6,6 +6,15 @@ function clearClicks() {
     }
     playerClicks++;
     document.querySelector("#turnCount span").innerHTML = playerClicks;
+
+    //check for winning
+       let allCards=documentquerySelectorAll(".card");
+        let matchedCards = document.querySekectorAll(".matched");
+
+        if(allCards.length == matchedCards.length) {
+            //player has matched all cards
+            document.querySelctor("#winning").innerHTML = "You Won!"
+        }
 }
 
 function flipCard() {
