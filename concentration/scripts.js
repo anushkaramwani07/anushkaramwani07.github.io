@@ -2,6 +2,8 @@
 
 function flipCard() {
 
+    if(!this.classList.contains("matched"))
+    {
     this.classList.add("clicked");
 
     //this will get all the cards that were clicked
@@ -30,6 +32,7 @@ function flipCard() {
             clearClicks();
         }
     }
+}
 }
 
 //will run when DOM loads
