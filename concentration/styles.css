@@ -39,6 +39,10 @@
     /* special CSS property relevant to 3D flips */
 }
 
+.matched{
+  opacity: 0;
+}
+
 .cardTop {
     background-color: darkblue;
     color: #eee;

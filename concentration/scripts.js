@@ -27,8 +27,6 @@ function flipCard() {
 }
 
 
-
-
 //willrun when DOM loads
 document.addEventListener("DOMContentLoaded", function (e) {
 
