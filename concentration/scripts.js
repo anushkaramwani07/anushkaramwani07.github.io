@@ -22,7 +22,6 @@ function clearClicks() {
 function flipCard() {
 
     if (!this.classList.contains("matched")) {
-        this.classList.add("clicked");
 
         //this will get all the cards that were clicked
         let allClickedCards = document.querySelectorAll(".clicked");
@@ -48,9 +47,9 @@ function flipCard() {
 
             } else {
                 console.log("Its not a match!!");
-                window.setTimeout(clearClicks, 2000);
-                clearClicks();
+                
             }
+            window.setTimeout(clearClicks, 2000);
         }
     }
 }
