@@ -12,13 +12,13 @@ function clearClicks() {
     document.querySelector("#turnCount span").innerHTML = playerClicks;
 
     //check for winning
-    let allCards = documentquerySelectorAll(".card");
+    let allCards = document.querySelectorAll(".card");
     let matchedCards = document.querySelectorAll(".matched");
 
     if (allCards.length == matchedCards.length) {
         //player has matched all cards
         console.log("All cards matched! Player has won!")
-        document.querySelctor("#winning").innerHTML = "You Won!"
+        document.querySelector("#winning").innerHTML = "You Won!"
     }
 }
 
@@ -37,8 +37,6 @@ function flipCard() {
         allClickedCards = document.querySelectorAll(".clicked");
 
         if (allClickedCards.length == 2) {
-
-            playerClicks++;
 
             let card1 = allClickedCards[0].classList.toString();
             let card2 = allClickedCards[1].classList.toString();
