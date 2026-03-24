@@ -1,4 +1,8 @@
 
+let playerClicks = 0;
+let timeDelay = 1000; //this is milliseconds
+
+
 function clearClicks() 
 {
     let allClickedCards = document.querySelectorAll(".clicked");
