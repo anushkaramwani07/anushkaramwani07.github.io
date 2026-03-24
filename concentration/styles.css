@@ -203,10 +203,27 @@ body{
   align-items: center;
 }
 
+#gameBoard{
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+}
 
+#turnCount{ 
+  margin-top: 1.5rem;
+  color:white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
-
-
+#winning{
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: #00ffcc;
+  font-weight: bold;
+}
 
 
 /* responsive design*/
