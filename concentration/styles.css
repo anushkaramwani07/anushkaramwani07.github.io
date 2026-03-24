@@ -3,6 +3,7 @@
   --boardWidth: 100vw;
   --boardGap: 1rem;
   --timeDelay: 1s;
+  --cardSize: min(18vw,18vh);
 }
 
 .card {
@@ -193,6 +194,8 @@
   gap: 1rem;
   gap: var(--boardGap);
   width: var(--boardWidth);
+  max-width: 90vw;
+  max-height: 70vh;
 }
 
 body{
