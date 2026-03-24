@@ -44,7 +44,7 @@
 
 .matched {
   opacity: 0;
-    transition-delay: var(--timeDelay);
+  transition-delay: var(--timeDelay);
 }
 
 .cardTop {
