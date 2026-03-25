@@ -22,6 +22,7 @@ function clearClicks() {
     }
 }
 
+//controls what happens when a card is clicked
 function flipCard() {
 
     if (!this.classList.contains("matched")) {
@@ -72,7 +73,3 @@ document.addEventListener("DOMContentLoaded", function (e) {
         allCards[x].addEventListener("click", flipCard);
     }
 });
-
-
-
-//everything works fine, except "You Won" won't print, and we need to make this look beauitiful!
