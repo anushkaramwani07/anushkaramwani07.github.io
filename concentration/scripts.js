@@ -15,8 +15,9 @@ function clearClicks() {
     let allCards = document.querySelectorAll(".card");
     let matchedCards = document.querySelectorAll(".matched");
 
+    //checks if all cards are matched
     if (allCards.length == matchedCards.length) {
-        //player has matched all cards
+        //player has matched all cards to console
         console.log("All cards matched! Player has won!")
         document.querySelector("#winning").innerHTML = "You Won!"
     }
@@ -24,12 +25,13 @@ function clearClicks() {
 
 //controls what happens when a card is clicked
 function flipCard() {
-
+    // this ichecks that the card hasn't already been matched.
     if (!this.classList.contains("matched")) {
 
         //this will get all the cards that were clicked
         let allClickedCards = document.querySelectorAll(".clicked");
 
+        //makes sure only 2 cards are flipped at a time.
         if (allClickedCards.length < 2) {
             this.classList.add("clicked");
         }
@@ -39,6 +41,7 @@ function flipCard() {
 
         if (allClickedCards.length == 2) {
 
+            //comapring class names of both the cards to see if they are the same pair.
             let card1 = allClickedCards[0].classList.toString();
             let card2 = allClickedCards[1].classList.toString();
 
@@ -67,9 +70,12 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
 
     for (x = 0; x < allCards.length; x++) {
+
+        //randomizes the cards
         let randNum = Math.floor(Math.random() * allCards.length);
         gameboard.insertBefore(allCards[x], gameboard.children[randNum]);
 
+        //calls flipCard function when a card is clicked
         allCards[x].addEventListener("click", flipCard);
     }
 });
