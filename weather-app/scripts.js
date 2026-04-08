@@ -22,6 +22,22 @@ function updateWeather(weatherObject){
     document.querySelector("#currentStatus").innerHTML = weatherObject.current.condition.text;
     document.querySelector("#currentHumidity span").innerHTML = weatherObject.current.humidity + "%";
     document.querySelector("#currentWind").innerHTML = weatherObject.current.wind_mph + "mph " + weatherObject.current.wind_dir;
+
+    let windspeed = weatherObject.current.wind_mph;
+    let winddirection = weatherObject.current.wind_dir;
+    document.querySelector("#currentWind").innerHTML = windspeed + "mph" + winddirection;
+
+    let futureDays = document.querySelectorAll(".futureDay");
+    for(i=0; i < futureDays.length; i++){
+        
+        futureDays[i].querySelector(".futureTemp").innerHTML = weatherObject.forecast.forecastday[i].day.condition.text;
+
+         windspeed = weatherObject.forecastday[i].day.maxwind_mph;
+         winddirection = weatherObject.current.wind_dir;
+    
+    
+    }
+
 }
 
 //wait for the DOM to load
