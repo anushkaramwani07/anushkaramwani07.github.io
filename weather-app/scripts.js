@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     getData(sampleURL, sampleOptions).then(function (result) {
 
-        console.log(result.current.tmp_f);
+        console.log(result.current.temp_f);
         
     });
 
