@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     getData(sampleURL, sampleOptions).then(function (result) {
 
-        console.log(result.forecast.forcastday);
+        console.log(result.forecast.forcastday[0].day.maxtemp_f);
         
     });
 
