@@ -16,6 +16,12 @@ async function getData(url, options) {
     }
 }
 
+function updateWeather(weatherObject){
+    console.log(weatherObject);
+    document.querySelector("#currentTemp").innerHTML = weatherObject.current.temp_f;
+    document.querySelector("#currentTemp").innerHTML = weatherObject.current.condition.text;
+}
+
 //wait for the DOM to load
 document.addEventListener("DOMContentLoaded", function () {
     scrollingBox = document.querySelector("#futureInfo");
@@ -42,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     getData(sampleURL, sampleOptions).then(function (result) {
 
-        console.log(result.forecast.forcastday[0].day.maxtemp_f);
+        updateWeather(result);
         
     });
 
