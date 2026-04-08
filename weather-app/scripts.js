@@ -18,8 +18,10 @@ async function getData(url, options) {
 
 function updateWeather(weatherObject){
     console.log(weatherObject);
-    document.querySelector("#currentTemp").innerHTML = weatherObject.current.temp_f;
-    document.querySelector("#currentTemp").innerHTML = weatherObject.current.condition.text;
+    document.querySelector("#currentTemp span").innerHTML = weatherObject.current.temp_f;
+    document.querySelector("#currentStatus").innerHTML = weatherObject.current.condition.text;
+    document.querySelector("#currentHumidity span").innerHTML = weatherObject.current.humidity + "%";
+    document.querySelector("#currentWind").innerHTML = weatherObject.current.wind_mph + "mph " + weatherObject.current.wind_dir;
 }
 
 //wait for the DOM to load
