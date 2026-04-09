@@ -170,8 +170,6 @@ main {
     z-index: 999;
 }
 
-
-
 body.showModal #modalCover,
 body.showModal #modalForm{
     display: block;
