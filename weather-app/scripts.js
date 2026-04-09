@@ -14,11 +14,16 @@ let scrollingBox;
 let offsetLeftStart;
 let isMoving;
 
+//fetches data from API
 async function getData(url, options) {
     try {
+
+        //it waits for the API response
         const response = await fetch(url, options);
         if (response.ok) {
             const result = await response.json();
+
+            //converts to JSON and returns it
             return result;
         } else {
             throw (response.status);
@@ -51,11 +56,13 @@ function updateWeather(weatherObject) {
 
 }
 
-//wait for the DOM to load
+//wait for the page to load before running this code.
 document.addEventListener("DOMContentLoaded", function () {
     scrollingBox = document.querySelector("#futureInfo");
     isMoving = false;
 
+
+    //enables click and drag horizontal scroll.
     scrollingBox.addEventListener("mousedown", function (e) {
         scrollLeftStart = scrollingBox.scrollLeft;
         offsetLeftStart = e.pageX - scrollingBox.offsetLeft;
@@ -75,13 +82,20 @@ document.addEventListener("DOMContentLoaded", function () {
     let ipLookupURL = "https://api.ipify.org/?format=json";
     let ipLookupOptions = {};
 
-    // use ajax to fetch IP in JSON format.
+    //Fetch user's IP address
+    // use ajax to fetch IP in JSON format?
     getData(ipLookupURL, ipLookupOptions).then(function (result) {
 
+
+        //use IP address to fetch weather data
         let weatherLookupURL = weatherUrl + result.ip;
         console.log(weatherLookupURL);
+
+        //based on location
         getData(weatherLookupURL, weatherOptions).then(function (weatherResult) {
             console.log(weatherResult);
+
+            //display it on the page
             updateWeather(weatherResult);
         });
     });
