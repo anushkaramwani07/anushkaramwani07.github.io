@@ -35,7 +35,6 @@ function updateWeather(weatherObject){
          windspeed = weatherObject.forecastday[i].day.maxwind_mph;
          winddirection = weatherObject.current.wind_dir;
     
-    
     }
 
 }
