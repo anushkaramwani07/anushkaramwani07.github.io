@@ -86,4 +86,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    document.querySelector("#findLocation").addEventListener("click", function() {
+        document.body.classList.toggle("showModal");
+    });
+
+
 });
