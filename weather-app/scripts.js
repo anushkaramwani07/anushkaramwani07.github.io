@@ -1,3 +1,15 @@
+
+//API something:
+const weatherUrl = 'https://weatherapi-com.p.rapidapi.com/forecast.json?days=3&q=London';
+const weatherOptions = {
+	method: 'GET',
+	headers: {
+		'x-rapidapi-key': '52a2365d0fmsh64f226660940b82p14ba87jsnfa38e45e7e58',
+		'x-rapidapi-host': 'weatherapi-com.p.rapidapi.com',
+		'Content-Type': 'application/json'
+	}
+};
+
 let scrollingBox;
 let offsetLeftStart;
 let isMoving;
@@ -59,14 +71,16 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollingBox.scrollLeft = scrollLeftStart - (e.pageX - scrollingBox.offsetLeft - offsetLeftStart);
     });
 
+    //ipLookup data
+    let ipLookupURL = "https://api.ipify.org/?format=json";
+    let ipLookupOptions = {};
 
-    let sampleURL = "https://tordevries.github.io/477/examples/ajax-api-test/current.js";
-    let sampleOptions = {};
+    // use ajax to fetch IP in JSON format.
+    getData(ipLookupURL, ipLookupOptions).then(function(result){
+        getData(weatherUrl, weatherOptions).then(function(weatherResult){
+            console.log(weatherResult);
 
-    getData(sampleURL, sampleOptions).then(function (result) {
-
-        updateWeather(result);
-        
+        });
     });
 
 });
