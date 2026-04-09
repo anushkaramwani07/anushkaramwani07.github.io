@@ -2,12 +2,12 @@
 //API something:
 const weatherUrl = 'https://weatherapi-com.p.rapidapi.com/forecast.json?days=3&q=London';
 const weatherOptions = {
-	method: 'GET',
-	headers: {
-		'x-rapidapi-key': '52a2365d0fmsh64f226660940b82p14ba87jsnfa38e45e7e58',
-		'x-rapidapi-host': 'weatherapi-com.p.rapidapi.com',
-		'Content-Type': 'application/json'
-	}
+    method: 'GET',
+    headers: {
+        'x-rapidapi-key': '52a2365d0fmsh64f226660940b82p14ba87jsnfa38e45e7e58',
+        'x-rapidapi-host': 'weatherapi-com.p.rapidapi.com',
+        'Content-Type': 'application/json'
+    }
 };
 
 let scrollingBox;
@@ -28,7 +28,7 @@ async function getData(url, options) {
     }
 }
 
-function updateWeather(weatherObject){
+function updateWeather(weatherObject) {
     console.log(weatherObject);
     document.querySelector("#currentTemp span").innerHTML = weatherObject.current.temp_f;
     document.querySelector("#currentStatus").innerHTML = weatherObject.current.condition.text;
@@ -40,13 +40,13 @@ function updateWeather(weatherObject){
     document.querySelector("#currentWind").innerHTML = windspeed + "mph" + winddirection;
 
     let futureDays = document.querySelectorAll(".futureDay");
-    for(i=0; i < futureDays.length; i++){
-        
+    for (i = 0; i < futureDays.length; i++) {
+
         futureDays[i].querySelector(".futureTemp").innerHTML = weatherObject.forecast.forecastday[i].day.condition.text;
 
-         windspeed = weatherObject.forecastday[i].day.maxwind_mph;
-         winddirection = weatherObject.current.wind_dir;
-    
+        windspeed = weatherObject.forecastday[i].day.maxwind_mph;
+        winddirection = weatherObject.current.wind_dir;
+
     }
 
 }
@@ -76,19 +76,35 @@ document.addEventListener("DOMContentLoaded", function () {
     let ipLookupOptions = {};
 
     // use ajax to fetch IP in JSON format.
-    getData(ipLookupURL, ipLookupOptions).then(function(result){
+    getData(ipLookupURL, ipLookupOptions).then(function (result) {
 
         let weatherLookupURL = weatherUrl + result.ip;
         console.log(weatherLookupURL);
-        getData(weatherLookupURL, weatherOptions).then(function(weatherResult){
+        getData(weatherLookupURL, weatherOptions).then(function (weatherResult) {
             console.log(weatherResult);
             updateWeather(weatherResult);
         });
     });
 
-    document.querySelector("#findLocation").addEventListener("click", function() {
+    document.querySelector("#findLocation").addEventListener("click", function () {
         document.body.classList.toggle("showModal");
     });
 
+
+    document.querySelector("#LocationForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        document.body.classList.toggle("showModal");
+        let newLocation = document.querySelector("#locationBox").value;
+
+        let weatherLookupURL = weatherUrl + result.ip;
+        console.log(weatherLookupURL);
+
+        getData(weatherLookupURL, weatherOptions).then(function (weatherResult) {
+            console.log(weatherResult);
+            updateWeather(weatherResult);
+        });
+
+    });
 
 });
