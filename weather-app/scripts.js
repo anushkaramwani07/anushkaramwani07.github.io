@@ -77,9 +77,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // use ajax to fetch IP in JSON format.
     getData(ipLookupURL, ipLookupOptions).then(function(result){
-        getData(weatherUrl, weatherOptions).then(function(weatherResult){
-            console.log(weatherResult);
 
+        let weatherLookupURL = weatherUrl + result.ip;
+        console.log(weatherLookupURL);
+        getData(weatherLookupURL, weatherOptions).then(function(weatherResult){
+            console.log(weatherResult);
+            updateWeather(weatherResult);
         });
     });
 
